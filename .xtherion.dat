@@ -1,6 +1,6 @@
 set xth(ctrl,cp,datlist) {}
-xth_cp_data_tree_insert 1 {} 0   "" "" "length: 18.75m (surface 0.00m, duplicated 0.00m)\nvertical range: 5.84m (from A1@defaultSurvey at 304.80m to A2@defaultSurvey at 298.96m)\nnorth-south range: 6.15m (from A1@defaultSurvey at 6185248.83m to A4@defaultSurvey at 6185242.68m)\neast-west range: 13.21m (from A4@defaultSurvey at 611384.59m to A1@defaultSurvey at 611371.39m)\nnumber of shots: 3\nnumber of stations: 4"
-xth_cp_data_tree_insert 30 1 1 defaultSurvey defaultSurvey "Default Cave" "Default Cave" "length: 18.75m (surface 0.00m, duplicated 0.00m)\nvertical range: 5.84m (from A1@defaultSurvey at 304.80m to A2@defaultSurvey at 298.96m)\nnorth-south range: 6.15m (from A1@defaultSurvey at 6185248.83m to A4@defaultSurvey at 6185242.68m)\neast-west range: 13.21m (from A4@defaultSurvey at 611384.59m to A1@defaultSurvey at 611371.39m)\nnumber of shots: 3\nnumber of stations: 4"
+xth_cp_data_tree_insert 1 {} 0   "" "" "length: 18.75m (surface 0.00m, duplicated 0.00m)\nvertical range: 5.84m (from A1@defaultSurvey at 304.80m to A2@defaultSurvey at 298.96m)\nnorth-south range: 6.15m (from A1@defaultSurvey at 6185248.83m to A4@defaultSurvey at 6185242.68m)\neast-west range: 13.20m (from A4@defaultSurvey at 611384.59m to A1@defaultSurvey at 611371.39m)\nnumber of shots: 3\nnumber of stations: 4"
+xth_cp_data_tree_insert 30 1 1 defaultSurvey defaultSurvey "Default Cave" "Default Cave" "length: 18.75m (surface 0.00m, duplicated 0.00m)\nvertical range: 5.84m (from A1@defaultSurvey at 304.80m to A2@defaultSurvey at 298.96m)\nnorth-south range: 6.15m (from A1@defaultSurvey at 6185248.83m to A4@defaultSurvey at 6185242.68m)\neast-west range: 13.20m (from A4@defaultSurvey at 611384.59m to A1@defaultSurvey at 611371.39m)\nnumber of shots: 3\nnumber of stations: 4"
 xth_cp_data_tree_create
 set xth(ctrl,cp,maplist) {}
 xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
@@ -10,5 +10,5 @@ xth_cp_map_tree_insert map 1 49X1 p2 1 defaultProfMap defaultProfMap "" ""
 xth_cp_map_tree_create
 xth_cp_comp_stat 19 2
 set xth(th_exit_state) 2
-set xth(th_exit_number) 1692131579
+set xth(th_exit_number) 1692234701
 

@@ -86,14 +86,13 @@ enddef;
 
 let l_chimney = l_ceilingstep_UIS;
 
-def l_rockborder (expr P) =
-  T:=identity;
-  pickup PenC;
-  if cycle P: thclean P fi;
-  thfill P withcolor (100, 100, 100);  
-  thdraw P;
-
-enddef;
+%def l_rockborder (expr P) =
+%  T:=identity;
+%  pickup PenC;
+%  if cycle P: thclean P fi;
+%  thfill P withcolor (100, 100, 100);  
+%  thdraw P;
+%enddef;
 
 % modified from l_wall-flowstone_AUT
 %by Christian DeCelle

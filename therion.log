@@ -1,6 +1,6 @@
 therion 6.1.8 (2023-06-14)
   - using Proj 9.2.1, compiled against 9.2.1
-initialization file: C:\Users\christiandecelle\AppData\Local\Programs\Therion/therion.ini
+initialization file: C:\Program Files (x86)\Therion/therion.ini
 reading ... done
 configuration file: COMPILE.thconfig
 reading ... done
@@ -14,12 +14,37 @@ geomag declinations (deg):
 scanning centreline tree ... done
 searching for centerline loops ... done
 calculating station coordinates ... done
+processing survey data ... 
+####################### cavern log file ########################
+ 1> Survex 1.4.5
+ 2> Copyright (C) 1990-2021 Olly Betts
+ 3> 
+ 4> Survey contains 4 survey stations, joined by 3 shots.
+ 5> There are 0 loops.
+ 6> Total length of survey shots =   18.75m (  18.75m adjusted)
+ 7> Total plan length of survey shots =   15.01m
+ 8> Total vertical length of survey shots =    7.23m
+ 9> Vertical range = 5.84m (from 1 at 304.80m to 2 at 298.96m)
+10> North-South range = 6.15m (from 1 at 6185248.83m to 4 at 6185242.68m)
+11> East-West range = 13.21m (from 4 at 611384.59m to 1 at 611371.39m)
+12>    2 1-nodes.
+13>    2 2-nodes.
+14> 
+######################### transcription ########################
+ 4> 4 : A4@defaultSurvey -- 3 : A3@defaultSurvey
+ 9> 1 : A1@defaultSurvey -- 2 : A2@defaultSurvey
+10> 1 : A1@defaultSurvey -- 4 : A4@defaultSurvey
+11> 4 : A4@defaultSurvey -- 1 : A1@defaultSurvey
+12> 2 : A2@defaultSurvey
+13> 2 : A2@defaultSurvey
+#################### end of cavern log file ####################
+done
 calculating basic statistics ... done
 processing extended elevation ... done
 processing references ... done
 selecting export objects ... done
 processing projection plan ... done
-average distortion: 0.00%
+average distortion: 0.05%
 
 
 ############### export maps & scraps selection #################
@@ -28,10 +53,10 @@ S   300.80 planScrap@defaultSurvey ()
 ########## end of export maps & scraps selection ###############
 writing output/WORKING_Plan.pdf ...
 ####################### metapost log file ########################
-This is MetaPost, version 2.01 (TeX Live 2021/W32TeX) (kpathsea version 6.3.3)  15 AUG 2023 12:32
+This is MetaPost, version 2.01 (TeX Live 2021/W32TeX) (kpathsea version 6.3.3)  16 AUG 2023 17:11
 **data.mp
-(c:/Users/christiandecelle/AppData/Local/Programs/Therion/texmf/mpost/mpost.mp
-(c:/Users/christiandecelle/AppData/Local/Programs/Therion/texmf/mpost/plain.mp
+(c:/Program Files (x86)/Therion/texmf/mpost/mpost.mp
+(c:/Program Files (x86)/Therion/texmf/mpost/plain.mp
 Preloading the plain mem file, version 1.005) ) (./data.mp
 {randomseed:=42}
  [1] [2] [3] [4]
@@ -41,7 +66,7 @@ Preloading the plain mem file, version 1.005) ) (./data.mp
 [9] )
  
 Here is how much of MetaPost's memory you used:
- 3038 strings using 71436 characters
+ 3039 strings using 71518 characters
  2544864 bytes of node memory
  1883 symbolic tokens
  9i,82n,16p,312b,5f stack positions out of 16i,98n,20p,312b,6f
@@ -52,29 +77,27 @@ Here is how much of MetaPost's memory you used:
 converting scraps ... done
 making map ... done
 ######################## pdftex log file #########################
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdftex 2021.6.19)  15 AUG 2023 12:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdftex 2021.6.19)  16 AUG 2023 17:11
 entering extended mode
 **data.tex
 (./data.tex (./th_enc.tex) (./th_texts.tex) (./th_resources.tex
-(c:/Users/christiandecelle/AppData/Local/Programs/Therion/texmf/tex/glyphtounic
-ode.tex)) (./th_fontdef.tex{c:/Users/christiandecelle/AppData/Local/Programs/Th
-erion/texmf/fonts/pdftex.map})
+(c:/Program Files (x86)/Therion/texmf/tex/glyphtounicode.tex))
+(./th_fontdef.tex{c:/Program Files (x86)/Therion/texmf/fonts/pdftex.map})
 (./th_formdef.tex) (./th_pagedef.tex (./th_legend.tex)) (./th_pages.tex)
  58 numeric registers used out of 32768
 
 [1] ) 
 Here is how much of TeX's memory you used:
  284 strings out of 94604
- 4039 string characters out of 1142524
- 20190 words of memory out of 5004918
+ 3963 string characters out of 1142524
+ 20177 words of memory out of 5004905
  1936 multiletter control sequences out of 15000+50000
  21229 words of font info for 66 fonts, out of 1000000 for 2000
  1416 hyphenation exceptions out of 5000
  12i,5n,7p,337b,76s stack positions out of 5000i,500n,10000p,200000b,50000s
-<c:/Users/christiandecelle/AppData/Local/Programs/Therion/texmf/fonts/type
-1/cmss10.pfb><c:/Users/christiandecelle/AppData/Local/Programs/Therion/texmf/fo
-nts/type1/cmssi10.pfb>
-Output written on data.pdf (1 page, 32168 bytes).
+<c:/Program Files (x86)/Therion/texmf/fonts/type1/cmss10.pfb><c:/Program F
+iles (x86)/Therion/texmf/fonts/type1/cmssi10.pfb>
+Output written on data.pdf (1 page, 32142 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
@@ -92,10 +115,10 @@ S   300.80 planScrap@defaultSurvey ()
 ########## end of export maps & scraps selection ###############
 writing output/Clean_Plan.pdf ...
 ####################### metapost log file ########################
-This is MetaPost, version 2.01 (TeX Live 2021/W32TeX) (kpathsea version 6.3.3)  15 AUG 2023 12:32
+This is MetaPost, version 2.01 (TeX Live 2021/W32TeX) (kpathsea version 6.3.3)  16 AUG 2023 17:11
 **data.mp
-(c:/Users/christiandecelle/AppData/Local/Programs/Therion/texmf/mpost/mpost.mp
-(c:/Users/christiandecelle/AppData/Local/Programs/Therion/texmf/mpost/plain.mp
+(c:/Program Files (x86)/Therion/texmf/mpost/mpost.mp
+(c:/Program Files (x86)/Therion/texmf/mpost/plain.mp
 Preloading the plain mem file, version 1.005) ) (./data.mp
 {randomseed:=42}
  [1] [2] [3] [4]
@@ -104,7 +127,7 @@ Preloading the plain mem file, version 1.005) ) (./data.mp
 (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) [4] [5] )
  
 Here is how much of MetaPost's memory you used:
- 2610 strings using 59969 characters
+ 2611 strings using 59972 characters
  2523916 bytes of node memory
  1882 symbolic tokens
  9i,82n,12p,312b,4f stack positions out of 16i,98n,15p,312b,6f
@@ -115,29 +138,27 @@ Here is how much of MetaPost's memory you used:
 converting scraps ... done
 making map ... done
 ######################## pdftex log file #########################
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdftex 2021.6.19)  15 AUG 2023 12:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdftex 2021.6.19)  16 AUG 2023 17:11
 entering extended mode
 **data.tex
 (./data.tex (./th_enc.tex) (./th_texts.tex) (./th_resources.tex
-(c:/Users/christiandecelle/AppData/Local/Programs/Therion/texmf/tex/glyphtounic
-ode.tex)) (./th_fontdef.tex{c:/Users/christiandecelle/AppData/Local/Programs/Th
-erion/texmf/fonts/pdftex.map})
+(c:/Program Files (x86)/Therion/texmf/tex/glyphtounicode.tex))
+(./th_fontdef.tex{c:/Program Files (x86)/Therion/texmf/fonts/pdftex.map})
 (./th_formdef.tex) (./th_pagedef.tex (./th_legend.tex)) (./th_pages.tex)
  54 numeric registers used out of 32768
 
 [1] ) 
 Here is how much of TeX's memory you used:
  280 strings out of 94604
- 4004 string characters out of 1142524
- 17818 words of memory out of 5003546
+ 3928 string characters out of 1142524
+ 17823 words of memory out of 5003551
  1932 multiletter control sequences out of 15000+50000
  21229 words of font info for 66 fonts, out of 1000000 for 2000
  1416 hyphenation exceptions out of 5000
  12i,5n,7p,229b,76s stack positions out of 5000i,500n,10000p,200000b,50000s
-<c:/Users/christiandecelle/AppData/Local/Programs/Therion/texmf/fonts/type
-1/cmss10.pfb><c:/Users/christiandecelle/AppData/Local/Programs/Therion/texmf/fo
-nts/type1/cmssi10.pfb>
-Output written on data.pdf (1 page, 28766 bytes).
+<c:/Program Files (x86)/Therion/texmf/fonts/type1/cmss10.pfb><c:/Program F
+iles (x86)/Therion/texmf/fonts/type1/cmssi10.pfb>
+Output written on data.pdf (1 page, 28763 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream
@@ -149,7 +170,7 @@ PDF statistics:
 done
 writing output/plan.xvi ... done
 processing projection elevation ... done
-average distortion: 0.00%
+average distortion: 0.04%
 writing output/elevation.xvi ... done
 writing xtherion file ... done
 compilation time: 2 sec
@@ -158,14 +179,14 @@ compilation time: 2 sec
 ###################### scrap distortions #######################
  PROJECTION: plan
  AVERAGE  MAXIMAL  SCRAP
-   0.00%    0.00%  planScrap@defaultSurvey
+   0.05%    0.16%  planScrap@defaultSurvey
 ################### end of scrap distortions ###################
 
 
 ###################### scrap distortions #######################
  PROJECTION: elevation
  AVERAGE  MAXIMAL  SCRAP
-   0.00%    0.01%  profileScrap@defaultSurvey
+   0.04%    0.16%  profileScrap@defaultSurvey
 ################### end of scrap distortions ###################
 
 ############# CRS transformations chosen by PROJ ###############
