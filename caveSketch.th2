@@ -1,5 +1,5 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -132.0 -132.0 1127.0 973.165
+##XTHERION## xth_me_area_adjust -132.0 -132.0 1127.0 973.1616
 ##XTHERION## xth_me_area_zoom_to 100
 ##XTHERION## xth_me_image_insert {101.42300000000006 1 1.0} {528.494 A1} cave.xvi 0 {}
 ##XTHERION## xth_me_image_insert {641.9639999999999 1 1.0} {821.5396000000001 A1} output/elevation.xvi 0 {}
@@ -7,6 +7,15 @@ encoding  utf-8
 
 
 scrap planScrap -scale [-128.0 -128.0 1151.62 -128.0 0.0 0.0 32.502348 0.0 m]
+
+line rock-border -close on
+  756.0 200.0
+  743.0 199.0 683.0 201.0 676.0 193.0
+  669.0 185.0 643.0 173.0 668.0 144.0
+  693.0 115.0 726.0 104.0 744.0 115.0
+  762.0 126.0 782.0 156.0 783.0 159.0
+  784.0 162.0 769.0 201.0 756.0 200.0
+endline
 
 line wall
   75.0 490.0

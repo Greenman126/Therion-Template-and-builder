@@ -11,19 +11,33 @@ layout defaults
   color map-bg [80 80 80]  #Map background is grey
   scale 1 200              #Changes Map Scale
   #base-scale 1 200        #Changes Symbol Scale
-  #map-header -5 100 nw    #changes title/legend location. Replace nw with off to remove
-  
+  map-header 0 -10 nw    #changes title/legend location. Replace nw with off to remove
+  grid-size 10 10 10 ft    #adjusts size of grid for profile depths
+  grid-coords border       #enables depths on the side of the grid lines. Only works in meters
 endlayout
 
-layout workingMap
+layout workingPlan
   copy defaults
   copy workingTemplate
 endlayout
 
-layout cleanMap
+layout cleanPlan
   copy defaults
   copy cleanTemplate
   #copy ColorElevation    #uncomment this if you want each scrap colored by elevation
+endlayout
+
+layout workingProf
+  copy defaults
+  copy workingTemplate
+  grid bottom
+endlayout
+
+layout cleanProf
+  copy defaults
+  copy cleanTemplate
+  #copy ColorElevation    #uncomment this if you want each scrap colored by elevation
+  grid bottom             #adds grid/depth lines
 endlayout
 
 layout debug
@@ -37,31 +51,31 @@ endlayout
 
                           # PDF Map Exports #
 
-export map -projection plan -layout workingMap -o "output/WORKING_Plan.pdf"
-export map -projection plan -layout cleanMap -o "output/Clean_Plan.pdf"
+export map -projection plan -layout workingPlan -o "output/WORKING_Plan.pdf"
+#export map -projection plan -layout cleanPlan -o "output/Clean_Plan.pdf"
 
-#export map -projection extended -layout workingMap -o "output/WORKING_Prof.pdf"
-#export map -projection extended -layout cleanMap   -o "output/Clean_Prof.pdf"
+#export map -projection extended -layout workingProf -o "output/WORKING_Prof.pdf"
+#export map -projection extended -layout cleanProf   -o "output/Clean_Prof.pdf"
 
-#export map -projection elevation -layout workingMap -o "output/WORKING_ProfProj.pdf"
-#export map -projection elevation -layout cleanMap   -o "output/Clean_ProfProj.pdf"
+export map -projection elevation -layout workingProf -o "output/WORKING_ProfProj.pdf"
+#export map -projection elevation -layout cleanProf   -o "output/Clean_ProfProj.pdf"
 
 
                             # SVG Exports #
 
-#export map -projection plan -layout workingMap -o "output/WORKING_Plan.svg"
-#export map -projection plan -layout cleanMap -o "output/Clean_Plan.svg"
+#export map -projection plan -layout workingPlan -o "output/WORKING_Plan.svg"
+#export map -projection plan -layout cleanPlan -o "output/Clean_Plan.svg"
 
-#export map -projection extended -layout workingMap -o "output/WORKING_Prof.svg"
-#export map -projection extended -layout cleanMap   -o "output/Clean_Prof.svg"
+#export map -projection extended -layout workingProf -o "output/WORKING_Prof.svg" 
+#export map -projection extended -layout cleanProf   -o "output/Clean_Prof.svg"
 
-#export map -projection elevation -layout workingMap -o "output/WORKING_ProfProj.svg"
-#export map -projection elevation -layout cleanMap   -o "output/Clean_ProfProj.svg"
+#export map -projection elevation -layout workingProf -o "output/WORKING_ProfProj.svg"
+#export map -projection elevation -layout cleanProf   -o "output/Clean_ProfProj.svg"
 
 
                    # Continuation/Leads List Generation #
 
-#export continuation-list -o "output/leads.html" #Creates a leads list if you used the "point continuation" tool correctly
+export continuation-list -o "output/leads.html" #Creates a leads list if you used the "point continuation" tool correctly
 
 
                                  # Other #

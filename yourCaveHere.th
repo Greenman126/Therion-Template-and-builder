@@ -11,7 +11,6 @@ survey defaultSurvey -title "Default Cave"
     team "Jared Higgs" instruments
     
     units length feet
-    units z feet
     cs lat-long
     fix A1 55.800 -133.22334 1000
     

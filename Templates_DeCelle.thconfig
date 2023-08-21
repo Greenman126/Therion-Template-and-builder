@@ -17,20 +17,18 @@ endlayout
 
 layout workingTemplate
   copy symbolset
-  
   symbol-show group centreline
   symbol-show point station
   symbol-show line survey
-  
   
   debug station-names
 
   code metapost
   %this is added here and not symbolset because then it applies even when turned off
-  	def l_survey_cave (expr p) =
-  	  pickup PenC;
-    	draw p withcolor 0.5red;
-  	enddef;
+    def l_survey_cave (expr p) =
+      pickup PenC;
+      draw p withcolor 0.5red;
+    enddef;
   endcode
 endlayout
 
@@ -66,3 +64,4 @@ layout Final
   map-image 0 0 nw final_prof.pdf
   #map-image 0 0 nw clean_plan_draft.pdf
 endlayout
+
