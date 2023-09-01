@@ -47,6 +47,50 @@ def p_claychoke (expr pos,theta,sc,al)=
 	p_label ("MF", pos, theta, 0);
 enddef;
 
+% modified from l_wall-flowstone_AUT by C. DeCelle
+
+def l_dripline (expr P) =
+  T:=identity;
+  laenge:= arclength P;
+  symsize:=adjust_step(1u,1u);
+  circle_width:=symsize/2.5;
+  cur:=(symsize-circle_width);
+  pickup PenC;
+  forever:
+    t1 := arctime (cur) of P;
+    t2 := arctime (cur + circle_width) of P;
+    thdraw (point t1 of P){dir (angle(thdir(P,t1)) + 90)} ..
+           {dir (angle(thdir(P,t2)) - 90)}(point t2 of P) ..
+           {dir (angle(thdir(P,t1)) + 90)}(point t1 of P);
+    thfill (point t1 of P){dir (angle(thdir(P,t1)) + 90)} ..
+           {dir (angle(thdir(P,t2)) - 90)}(point t2 of P) ..
+           {dir (angle(thdir(P,t1)) + 90)}(point t1 of P) --
+           (point t1 of P)--cycle;
+    cur := cur + symsize + 0.3u;
+    exitif cur > laenge + (symsize / 3); % for rounding errors
+  endfor;
+  pickup PenA;
+  %thdraw P;
+enddef;
+
+%by C. DeCelle
+def p_moonmilk (expr pos,theta,sc,al) =
+   U:=(u, u);
+    T:=identity aligned al rotated theta scaled sc shifted pos;
+    pickup PenC;
+    % Define the outer and inner arcs of the crescent moon
+    path outer_arc, inner_arc;
+    outer_arc := halfcircle scaled 6sc rotated 100;
+    inner_arc := halfcircle scaled (6sc * 0.6) xscaled 1.5 rotated (100 + theta);
+    
+  % Create the crescent moon shape by subtracting the inner arc from the outer arc
+    p:=outer_arc -- reverse inner_arc -- cycle;
+    thdraw p;
+    thfill p;
+    thdraw p shifted (0.2u, -0.3u) scaled 0.3;
+
+enddef;
+
 % originally by Philip Schuchardt
 def p_gradient (expr pos,theta,sc,al) =
   U:=(.4u, .6u);
