@@ -47,6 +47,30 @@ def p_claychoke (expr pos,theta,sc,al)=
 	p_label ("MF", pos, theta, 0);
 enddef;
 
+%%water-drip symbol modified from SBE by Christian DeCelle
+picture CTD_water_drip_raw;
+CTD_water_drip_raw := image(
+
+	fill (493,1196)..controls (535,1234) and (583,1266)..(635,1290)
+		..controls (595,1233) and (566,1160)..(588,1091)
+		..controls (622,981) and (733,912)..(757,796)
+		..controls (789,684) and (728,556)..(622,509)
+		..controls (524,461) and (398,489)..(328,572)
+		..controls (278,629) and (259,710)..(272,785)
+		..controls (293,942) and (375,1090)..(493,1196)
+		--cycle withcolor blue;
+	currentpicture := currentpicture shifted (-(llcorner currentpicture)-(urcorner currentpicture - llcorner currentpicture)/2) scaled (u / max((xpart urcorner currentpicture) - (xpart llcorner currentpicture), (ypart urcorner currentpicture) - (ypart llcorner currentpicture)));
+);
+
+def p_waterdrip(expr pos, theta, sc, al) =
+	T := identity aligned al rotated theta scaled sc shifted pos;
+	thdraw CTD_water_drip_raw scaled 0.5;
+	thdraw CTD_water_drip_raw scaled 0.15 reflectedabout((0,0), (1,0)) shifted (-1.8,1.3) rotated 50;
+	thdraw CTD_water_drip_raw scaled 0.15 shifted (-1.7, -1.4) rotated 130;
+
+enddef;
+%%
+
 % modified from l_wall-flowstone_AUT by C. DeCelle
 
 def l_dripline (expr P) =
