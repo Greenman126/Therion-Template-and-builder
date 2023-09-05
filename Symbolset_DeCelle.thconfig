@@ -130,6 +130,10 @@ def p_narrowend (expr pos,theta,sc,al)=
 	p_label ("TT", pos, theta, 0);
 enddef;
 
+def p_anchor (expr pos,theta,sc,al)=
+  p_label ("X", pos, theta, 0);
+enddef;
+
 %bristol's symbol. Based on gypsum flower code.
 def p_airdraught (expr pos,theta,sc,al)=
     U:=(.25u,u);
@@ -718,3 +722,4 @@ text en "point narrow-end" "too tight"
 text en "point pebbles" "pebbles and cobbles"
 text en "point vegetable-debris" "vegetative debris"
 text en "line ceiling-step" "ceiling height change"
+text en "point anchor" "bolted anchor"
