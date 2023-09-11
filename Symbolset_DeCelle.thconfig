@@ -698,6 +698,15 @@ enddef;
       label.top(thTEX("Scale 1 : " & decimal round(Scale*100)),(0,0));
     endgroup;
   enddef;
+
+def p_u_fault (expr pos,theta,sc,al) =
+    T:=identity aligned al rotated theta scaled sc shifted pos;
+    pickup PenC;
+    thdraw (0,-0.3u)--(0,0.3u) withcolor 0.8black;
+	pickup PenD;
+	thdraw (0.1u, 0) -- (-0.1u, 0) withcolor 0.8black;
+enddef;
+
 endcode
 
 endlayout
@@ -723,3 +732,4 @@ text en "point pebbles" "pebbles and cobbles"
 text en "point vegetable-debris" "vegetative debris"
 text en "line ceiling-step" "ceiling height change"
 text en "point anchor" "bolted anchor"
+text en "point u:fault" "vertical fault"
