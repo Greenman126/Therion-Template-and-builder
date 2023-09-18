@@ -4,7 +4,7 @@ survey defaultSurvey -title "Default Cave"
   input caveSketch.th2
   
   centreline
-    declination 17.9 deg
+    declination 0.0 deg
     date 2023.07.10
     team "Ellen Whittle" instruments
     team "Anna Harris" notes
@@ -14,9 +14,10 @@ survey defaultSurvey -title "Default Cave"
     
     data normal from to length compass clino
     
-    A1  A2  21.370  108.30  -63.70  
-    A2  A3  16.400  113.60  1.50  
-    A3  A4  23.750  84  10.0   
+    F29  F30  49.2  201.5  0  
+    F30  F31  37.1  249.0  -3.0  
+    F31  F32  34.6  291.5  3.0   
+    F32  F33  10.6  221.5  -4 
   
   endcentreline
   
@@ -24,10 +25,10 @@ endsurvey
 
 
 map defaultPlanMap -projection plan
-  planScrap@defaultSurvey   #Pulls planScrap from the survey "defaultSurvey" (which is in caveSketch.th2)
+  scrapPlan@defaultSurvey   #Pulls planScrap from the survey "defaultSurvey" (which is in caveSketch.th2)
 endmap
 
-map defaultProfMap -projection elevation
-  profileScrap@defaultSurvey
-endmap
+#map defaultProfMap -projection elevation
+#  profileScrap@defaultSurvey
+#endmap
 

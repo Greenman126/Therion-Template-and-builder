@@ -1,16 +1,11 @@
-therion 6.1.8 (2023-06-14)
-  - using Proj 9.2.1, compiled against 9.2.1
+therion 6.1.7 (2023-04-23)
+  - using Proj 9.2.0, compiled against 9.2.0
 initialization file: C:\Program Files (x86)\Therion/therion.ini
 reading ... done
 configuration file: COMPILE.thconfig
 reading ... done
 reading source files ... done
 preprocessing database ... done
-output coordinate system: UTM8
-meridian convergence (deg): -1.4696
-geomag declinations (deg):
-  2023.1.1  17.9902
-  2024.1.1  17.8373
 scanning centreline tree ... done
 searching for centerline loops ... done
 calculating station coordinates ... done
@@ -18,25 +13,27 @@ processing survey data ...
 ####################### cavern log file ########################
  1> Survex 1.4.5
  2> Copyright (C) 1990-2021 Olly Betts
- 3> 
- 4> Survey contains 4 survey stations, joined by 3 shots.
- 5> There are 0 loops.
- 6> Total length of survey shots =   18.75m (  18.75m adjusted)
- 7> Total plan length of survey shots =   15.01m
- 8> Total vertical length of survey shots =    7.23m
- 9> Vertical range = 5.84m (from 1 at 1000.00m to 2 at 994.16m)
-10> North-South range = 6.15m (from 1 at 6185248.83m to 4 at 6185242.68m)
-11> East-West range = 13.21m (from 4 at 611384.59m to 1 at 611371.39m)
-12>    2 1-nodes.
-13>    2 2-nodes.
-14> 
+ 3> Survey has no control points. Therefore I've fixed 1 at (0,0,0)
+ 4> 
+ 5> Survey contains 5 survey stations, joined by 4 shots.
+ 6> There are 0 loops.
+ 7> Total length of survey shots =   40.08m (  40.08m adjusted)
+ 8> Total plan length of survey shots =   40.04m
+ 9> Total vertical length of survey shots =    1.37m
+10> Vertical range = 0.59m (from 2 at 0.00m to 3 at -0.59m)
+11> North-South range = 18.00m (from 1 at 0.00m to 3 at -18.00m)
+12> East-West range = 27.97m (from 1 at 0.00m to 5 at -27.97m)
+13>    2 1-nodes.
+14>    3 2-nodes.
+15> 
 ######################### transcription ########################
- 4> 4 : A4@defaultSurvey -- 3 : A3@defaultSurvey
- 9> 1 : A1@defaultSurvey -- 2 : A2@defaultSurvey
-10> 1 : A1@defaultSurvey -- 4 : A4@defaultSurvey
-11> 4 : A4@defaultSurvey -- 1 : A1@defaultSurvey
-12> 2 : A2@defaultSurvey
-13> 2 : A2@defaultSurvey
+ 3> 1 : F29@defaultSurvey
+ 5> 5 : F33@defaultSurvey -- 4 : F32@defaultSurvey
+10> 2 : F30@defaultSurvey -- 3 : F31@defaultSurvey
+11> 1 : F29@defaultSurvey -- 3 : F31@defaultSurvey
+12> 1 : F29@defaultSurvey -- 5 : F33@defaultSurvey
+13> 2 : F30@defaultSurvey
+14> 3 : F31@defaultSurvey
 #################### end of cavern log file ####################
 done
 calculating basic statistics ... done
@@ -44,16 +41,16 @@ processing extended elevation ... done
 processing references ... done
 selecting export objects ... done
 processing projection plan ... done
-average distortion: 0.04%
+average distortion: 8.29%
 
 
 ############### export maps & scraps selection #################
-M   996.00 defaultPlanMap@ ()
-S   996.00 planScrap@defaultSurvey ()
+M    -0.18 defaultPlanMap@ ()
+S    -0.18 scrapPlan@defaultSurvey ()
 ########## end of export maps & scraps selection ###############
 writing output/WORKING_Plan.pdf ...
 ####################### metapost log file ########################
-This is MetaPost, version 2.01 (TeX Live 2021/W32TeX) (kpathsea version 6.3.3)  20 AUG 2023 16:15
+This is MetaPost, version 2.01 (TeX Live 2021/W32TeX) (kpathsea version 6.3.3)  17 SEP 2023 20:21
 **data.mp
 (c:/Program Files (x86)/Therion/texmf/mpost/mpost.mp
 (c:/Program Files (x86)/Therion/texmf/mpost/plain.mp
@@ -63,61 +60,59 @@ Preloading the plain mem file, version 1.005) ) (./data.mp
 [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
 [1] [2] [3] [4] [5] (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp)
 (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) [6] [7] [8]
-[9] [10] )
+[9] [10] [11] [12] [13] )
  
 Here is how much of MetaPost's memory you used:
- 3039 strings using 71518 characters
- 2543072 bytes of node memory
+ 4046 strings using 94722 characters
+ 2601548 bytes of node memory
  1883 symbolic tokens
  9i,82n,16p,312b,5f stack positions out of 16i,98n,20p,312b,6f
-24 output files written: data-patt.1 .. data-patt.14
+27 output files written: data-patt.1 .. data-patt.14
 
 
 #################### end of metapost log file ####################
 converting scraps ... done
 making map ... done
 ######################## pdftex log file #########################
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdftex 2021.6.19)  20 AUG 2023 16:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdftex 2021.6.19)  17 SEP 2023 20:21
 entering extended mode
 **data.tex
 (./data.tex (./th_enc.tex) (./th_texts.tex) (./th_resources.tex
 (c:/Program Files (x86)/Therion/texmf/tex/glyphtounicode.tex))
 (./th_fontdef.tex{c:/Program Files (x86)/Therion/texmf/fonts/pdftex.map})
 (./th_formdef.tex) (./th_pagedef.tex (./th_legend.tex)) (./th_pages.tex)
- 59 numeric registers used out of 32768
+ 62 numeric registers used out of 32768
 
 [1] ) 
 Here is how much of TeX's memory you used:
- 285 strings out of 94604
- 3970 string characters out of 1142524
- 20181 words of memory out of 5004909
- 1937 multiletter control sequences out of 15000+50000
+ 288 strings out of 94604
+ 3991 string characters out of 1142524
+ 42117 words of memory out of 5024845
+ 1940 multiletter control sequences out of 15000+50000
  21229 words of font info for 66 fonts, out of 1000000 for 2000
  1416 hyphenation exceptions out of 5000
  12i,5n,7p,337b,76s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/Program Files (x86)/Therion/texmf/fonts/type1/cmss10.pfb><c:/Program F
 iles (x86)/Therion/texmf/fonts/type1/cmssi10.pfb>
-Output written on data.pdf (1 page, 32845 bytes).
+Output written on data.pdf (1 page, 44696 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
 
 ##################### end of pdftex log file #####################
 done
 processing projection elevation ... done
-average distortion: 0.04%
 
 
 ############### export maps & scraps selection #################
-M    -3.17 defaultProfMap@ ()
-S    -3.17 profileScrap@defaultSurvey ()
+S     -.-- @ ()
 ########## end of export maps & scraps selection ###############
 writing output/WORKING_ProfProj.pdf ...
 ####################### metapost log file ########################
-This is MetaPost, version 2.01 (TeX Live 2021/W32TeX) (kpathsea version 6.3.3)  20 AUG 2023 16:15
+This is MetaPost, version 2.01 (TeX Live 2021/W32TeX) (kpathsea version 6.3.3)  17 SEP 2023 20:21
 **data.mp
 (c:/Program Files (x86)/Therion/texmf/mpost/mpost.mp
 (c:/Program Files (x86)/Therion/texmf/mpost/plain.mp
@@ -125,49 +120,49 @@ Preloading the plain mem file, version 1.005) ) (./data.mp
 {randomseed:=42}
  [1] [2] [3] [4]
 [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
-[1] [2] [3] [4] [5] (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp)
-(./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) [6] [7] [8]
-[9] [10] [11] [12] [13] [14] [15] [16] [17] [18] )
+[1] [2] [3] (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp)
+(./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) [4] [5] [6] [7] [8] [9] [10]
+[11] [12] [13] [14] )
  
 Here is how much of MetaPost's memory you used:
- 3065 strings using 72448 characters
- 2543072 bytes of node memory
+ 2884 strings using 69408 characters
+ 2559944 bytes of node memory
  1883 symbolic tokens
  9i,82n,16p,312b,5f stack positions out of 16i,98n,20p,312b,6f
-32 output files written: data-patt.1 .. data.18
+28 output files written: data-patt.1 .. data.14
 
 
 #################### end of metapost log file ####################
 converting scraps ... done
 making map ... done
 ######################## pdftex log file #########################
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdftex 2021.6.19)  20 AUG 2023 16:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdftex 2021.6.19)  17 SEP 2023 20:21
 entering extended mode
 **data.tex
 (./data.tex (./th_enc.tex) (./th_texts.tex) (./th_resources.tex
 (c:/Program Files (x86)/Therion/texmf/tex/glyphtounicode.tex))
 (./th_fontdef.tex{c:/Program Files (x86)/Therion/texmf/fonts/pdftex.map})
 (./th_formdef.tex) (./th_pagedef.tex (./th_legend.tex)) (./th_pages.tex)
- 67 numeric registers used out of 32768
+ 61 numeric registers used out of 32768
 
 [1] ) 
 Here is how much of TeX's memory you used:
- 293 strings out of 94604
- 4035 string characters out of 1142524
- 20158 words of memory out of 5004886
- 1945 multiletter control sequences out of 15000+50000
- 21229 words of font info for 66 fonts, out of 1000000 for 2000
+ 287 strings out of 94604
+ 3971 string characters out of 1142524
+ 20336 words of memory out of 5005064
+ 1939 multiletter control sequences out of 15000+50000
+ 20080 words of font info for 63 fonts, out of 1000000 for 2000
  1416 hyphenation exceptions out of 5000
- 12i,5n,7p,337b,72s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 12i,5n,7p,238b,72s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/Program Files (x86)/Therion/texmf/fonts/type1/cmr10.pfb><c:/Program Fi
 les (x86)/Therion/texmf/fonts/type1/cmss10.pfb><c:/Program Files (x86)/Therion/
 texmf/fonts/type1/cmssi10.pfb>
-Output written on data.pdf (1 page, 44138 bytes).
+Output written on data.pdf (1 page, 39981 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
 
 ##################### end of pdftex log file #####################
@@ -176,29 +171,11 @@ writing output/leads.html ... done
 writing output/plan.xvi ... done
 writing output/elevation.xvi ... done
 writing xtherion file ... done
-compilation time: 2 sec
+compilation time: 6 sec
 
 
 ###################### scrap distortions #######################
  PROJECTION: plan
  AVERAGE  MAXIMAL  SCRAP
-   0.04%    0.16%  planScrap@defaultSurvey
+   8.29%   29.76%  scrapPlan@defaultSurvey
 ################### end of scrap distortions ###################
-
-
-###################### scrap distortions #######################
- PROJECTION: elevation
- AVERAGE  MAXIMAL  SCRAP
-   0.04%    0.16%  profileScrap@defaultSurvey
-################### end of scrap distortions ###################
-
-############# CRS transformations chosen by PROJ ###############
-  Area of Use (AoU): (-133.223, 55.800) (-133.223, 55.800)
-  [LAT-LONG → LAT-LONG] AoU: [no] transformation: [axis order change (2D) + Null geographic offset from WGS 84 to WGS 84 + axis order change (2D)] definition: [proj=noop ellps=GRS80] accuracy: [0.000 m]
-  [LAT-LONG → LAT-LONG] AoU: [yes] transformation: [axis order change (2D) + Null geographic offset from WGS 84 to WGS 84 + axis order change (2D)] definition: [proj=noop ellps=GRS80] accuracy: [0.000 m]
-  [LAT-LONG → UTM8] AoU: [yes] transformation: [axis order change (2D) + UTM zone 8N] definition: [proj=pipeline step proj=unitconvert xy_in=deg xy_out=rad step proj=utm zone=8 ellps=WGS84] accuracy: [0.000 m]
-  [LAT-LONG → EPSG:4326] AoU: [yes] transformation: [axis order change (2D) + Null geographic offset from WGS 84 to WGS 84 + axis order change (2D)] definition: [proj=noop ellps=GRS80] accuracy: [0.000 m]
-  [UTM8 → LONG-LAT] AoU: [yes] transformation: [Inverse of UTM zone 8N + axis order change (2D)] definition: [proj=pipeline step inv proj=utm zone=8 ellps=WGS84 step proj=unitconvert xy_in=rad xy_out=deg] accuracy: [0.000 m]
-  [UTM8 → EPSG:4326] AoU: [yes] transformation: [Inverse of UTM zone 8N + axis order change (2D)] definition: [proj=pipeline step inv proj=utm zone=8 ellps=WGS84 step proj=unitconvert xy_in=rad xy_out=deg] accuracy: [0.000 m]
-  [EPSG:4326 → UTM8] AoU: [yes] transformation: [axis order change (2D) + UTM zone 8N] definition: [proj=pipeline step proj=unitconvert xy_in=deg xy_out=rad step proj=utm zone=8 ellps=WGS84] accuracy: [0.000 m]
-########## end of CRS transformations chosen by PROJ ###########
