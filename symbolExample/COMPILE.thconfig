@@ -1,0 +1,84 @@
+encoding  utf-8
+source symbolset_test.th  #!!#EDIT THIS REFERENCE CORRECT .TH#!!#
+input "../Templates_DeCelle.thconfig"
+
+layout defaults
+  cs lat-long
+  north true
+  doc-author "Christian DeCelle"
+  units imperial
+  legend on
+  color map-bg [80 80 80]  #Map background is grey
+  scale 1 500              #Changes Map Scale
+  #base-scale 1 200        #Changes Symbol Scale
+  map-header 0 -10 nw    #changes title/legend location. Replace nw with off to remove
+  grid-size 10 10 10 ft    #adjusts size of grid for profile depths
+  grid-coords border       #enables depths on the side of the grid lines. Only works in meters
+endlayout
+
+layout workingPlan
+  copy defaults
+  copy workingTemplate
+endlayout
+
+layout cleanPlan
+  copy defaults
+  copy cleanTemplate
+  #copy ColorElevation    #uncomment this if you want each scrap colored by elevation
+endlayout
+
+layout workingProf
+  copy defaults
+  copy workingTemplate
+  grid bottom
+endlayout
+
+layout cleanProf
+  copy defaults
+  copy cleanTemplate
+  #copy ColorElevation    #uncomment this if you want each scrap colored by elevation
+  grid bottom             #adds grid/depth lines
+endlayout
+
+layout debug
+  copy defaults
+  copy debugTemplate
+endlayout
+
+    ###           Below are the commands which export maps          ###
+    ### These export to an output folder. Don't forget to make one! ###
+    ###           Remove "#" before a line to activate it           ###
+
+                          # PDF Map Exports #
+
+export map -projection plan -layout cleanPlan -o "wallSymbols.pdf"
+#export map -projection plan -layout cleanPlan -o "output/Clean_Plan.pdf"
+
+#export map -projection extended -layout workingProf -o "output/WORKING_Prof.pdf"
+#export map -projection extended -layout cleanProf   -o "output/Clean_Prof.pdf"
+
+#export map -projection elevation -layout workingProf -o "output/WORKING_ProfProj.pdf"
+#export map -projection elevation -layout cleanProf   -o "output/Clean_ProfProj.pdf"
+
+
+                            # SVG Exports #
+
+#export map -projection plan -layout workingPlan -o "output/WORKING_Plan.svg"
+#export map -projection plan -layout cleanPlan -o "output/Clean_Plan.svg"
+
+#export map -projection extended -layout workingProf -o "output/WORKING_Prof.svg" 
+#export map -projection extended -layout cleanProf   -o "output/Clean_Prof.svg"
+
+#export map -projection elevation -layout workingProf -o "output/WORKING_ProfProj.svg"
+#export map -projection elevation -layout cleanProf   -o "output/Clean_ProfProj.svg"
+
+
+                   # Continuation/Leads List Generation #
+
+#export continuation-list -o "output/leads.html" #Creates a leads list if you used the "point continuation" tool correctly
+
+
+                                 # Other #
+
+#export map -format xvi -projection plan -o "output/plan.xvi"
+#export map -format xvi -projection elevation -o "output/elevation.xvi"

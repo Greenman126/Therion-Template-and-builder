@@ -1,0 +1,276 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -130.0 -130.0 430.0 1180.0
+##XTHERION## xth_me_area_zoom_to 200
+
+
+
+scrap LineScrap2 -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+line wall -outline none -clip off
+  100.0 980.0
+  300.0 980.0
+endline
+
+line wall -outline none -clip off
+  100.0 920.0
+  300.0 920.0
+endline
+
+line wall -outline none -clip off
+  100.0 860.0
+  300.0 860.0
+endline
+
+line wall -outline none -clip off
+  100.0 800.0
+  300.0 800.0
+endline
+
+line wall -outline none -clip off
+  100.0 740.0
+  300.0 740.0
+endline
+
+line wall -outline none -clip off
+  100.0 680.0
+  300.0 680.0
+endline
+
+line wall -outline none -clip off
+  100.0 620.0
+  300.0 620.0
+endline
+
+line wall -outline none -clip off
+  100.0 560.0
+  300.0 560.0
+endline
+
+line wall -outline none -clip off
+  100.0 500.0
+  300.0 500.0
+endline
+
+line wall -outline none -clip off
+  100.0 440.0
+  300.0 440.0
+endline
+
+line wall -outline none -clip off
+  100.0 380.0
+  300.0 380.0
+endline
+
+line wall -outline none -clip off
+  100.0 260.0
+  300.0 260.0
+endline
+
+line wall -outline none -clip off
+  100.0 200.0
+  300.0 200.0
+endline
+
+line wall -outline none -clip off
+  100.0 320.0
+  300.0 320.0
+endline
+
+line wall -clip off -outline out
+  300.0 150.0
+  300.0 1050.0
+endline
+
+line rimstone-pool
+  217.5 406.0
+  217.5 406.0 221.0 398.5 227.5 398.5
+  234.0 398.5 235.5 398.0 242.5 399.0
+  249.5 400.0 254.5 405.0 257.5 404.0
+  260.5 403.0 274.0 406.0 276.0 405.0
+  smooth off
+endline
+
+line rimstone-dam
+  217.5 462.5
+  221.0 462.5 230.5 464.0 233.5 462.5
+  236.5 461.0 237.0 461.0 242.0 457.5
+  247.0 454.0 253.5 451.0 258.5 453.0
+  263.5 455.0 270.5 456.5 272.5 459.5
+  smooth off
+endline
+
+line pit-chimney
+  218.0 525.0
+  222.0 523.0 231.5 519.0 238.5 516.5
+  245.5 514.0 248.0 512.5 256.0 514.5
+  264.0 516.5 266.5 522.0 270.5 524.0
+  274.5 526.0 281.5 529.0 281.5 529.0
+  smooth off
+endline
+
+line pit
+  223.0 575.5
+  223.0 575.5 243.5 574.0 247.5 574.0
+  251.5 574.0 263.0 575.0 265.0 575.5
+  267.0 576.0 277.5 578.5 277.5 578.5
+  smooth off
+endline
+
+line gradient -reverse on
+  286.0 649.0
+  282.0 643.0 276.0 640.5 269.5 636.5
+  263.97 633.1 254.5 632.5 248.0 635.0
+  241.5 637.5 224.5 647.0 224.5 647.0
+  smooth off
+endline
+
+line overhang
+  217.0 687.5
+  222.5 692.0 225.0 698.5 236.0 698.0
+  247.0 697.5 252.5 695.5 258.0 693.0
+  263.5 690.5 272.5 687.5 277.0 692.0
+  smooth off
+endline
+
+line moonmilk
+  214.5 772.5
+  214.5 772.5 239.5 770.5 243.5 771.0
+  247.5 771.5 262.0 771.0 264.0 771.5
+  smooth off
+endline
+
+line map-connection
+  221.5 825.5
+  226.0 826.0 244.0 826.0 251.0 826.5
+  258.0 827.0 273.5 826.0 275.0 826.5
+  smooth off
+endline
+
+line wall -outline none -clip off
+  100.0 150.0
+  300.0 150.0
+endline
+
+line rope
+  222.5 165.5
+  226.0 170.5 231.0 179.0 241.5 177.0
+  252.0 175.0 255.0 169.0 262.0 165.5
+  269.0 162.0 282.5 172.5 284.5 174.5
+  smooth off
+endline
+
+line rock-edge
+  229.5 224.0
+  227.0 220.0
+endline
+
+line rock-edge
+  230.5 231.0
+  229.5 224.0
+  229.5 224.0 240.5 223.5 243.0 224.0
+  245.5 224.5 254.5 225.0 254.5 225.0
+  smooth off
+  265.5 229.5
+endline
+
+line rock-border -close on -reverse on
+  232.5 217.0
+  232.5 217.0 229.0 217.0 227.0 220.0
+  225.0 223.0 229.0 229.5 230.5 231.0
+  232.0 232.5 241.0 237.0 241.0 237.0
+  smooth off
+  255.0 234.5
+  265.5 229.5
+  267.5 221.5
+  264.0 218.5
+  232.5 217.0
+endline
+
+line rock-edge
+  215.5 280.5
+  217.5 283.0 224.0 290.5 233.5 292.0
+  243.0 293.5 252.5 289.0 257.5 282.5
+  262.5 276.0 272.5 272.0 277.0 277.5
+  smooth off
+endline
+
+line rock-border
+  220.0 342.0
+  221.0 343.5 239.5 332.5 247.0 335.0
+  254.5 337.5 257.5 340.5 265.0 345.0
+  272.5 349.5 276.5 344.5 278.5 342.5
+  smooth off
+endline
+
+line joint
+  216.5 1008.0
+  219.0 1010.0 227.5 1015.0 231.0 1015.5
+  234.5 1016.0 243.0 1016.5 249.5 1012.5
+  256.0 1008.5 264.0 1009.0 266.5 1010.0
+  smooth off
+endline
+
+point 149.5 1011.0 label -text "joint"
+
+point 150 770 label -text "moonmilk"
+
+point 150 830.0 label -text "map-connection"
+
+point 150 890 label -text "low-ceiling"
+
+point 150 950.0 label -text "label"
+
+point 150 710 label -text "overhang"
+
+point 150 650 label -text "passage-gradient"
+
+point 150 590 label -text pit
+
+point 150 530 label -text pit-chimney
+
+point 150 470 label -text rimstone-dam
+
+point 150.5 346.5 label -text rock-border
+
+point 150 410 label -text rimstone-pool
+
+point 149.5 172.0 label -text "rope"
+
+point 149.5 227.0 label -text "Rock Border and Edges"
+
+point 149.0 287.0 label -text rock-edge
+
+line low-ceiling
+  216.5 883.5
+  218.0 884.0 223.0 890.5 232.0 888.5
+  241.0 886.5 246.5 883.5 251.5 882.5
+  256.5 881.5 271.0 888.0 271.0 888.0
+  smooth off
+endline
+
+line label -text "Your label goes here"
+  220.0 941.0
+  222.0 944.0 221.5 949.5 228.5 950.0
+  235.5 950.5 237.0 952.5 244.0 948.0
+  251.0 943.5 252.0 938.0 258.0 942.0
+  264.0 946.0 272.0 953.0 272.0 953.0
+  smooth off
+endline
+
+line wall -outline none -clip off
+  200.0 1050.0
+  200.0 150.0
+endline
+
+line wall -clip off -outline out
+  100.0 1050.0
+  100.0 150.0
+endline
+
+point 100 150 station -name A5
+
+point 100 1050 station -name A4
+
+endscrap
+
+

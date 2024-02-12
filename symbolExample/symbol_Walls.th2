@@ -1,0 +1,385 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -130.0 -130.0 430.0 1180.0
+##XTHERION## xth_me_area_zoom_to 200
+
+
+
+scrap WallScrap -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+line wall -outline none -clip off
+  100.0 980.0
+  300.0 980.0
+endline
+
+line wall -outline none -clip off
+  100.0 920.0
+  300.0 920.0
+endline
+
+line wall -outline none -clip off
+  100.0 860.0
+  300.0 860.0
+endline
+
+line wall -outline none -clip off
+  100.0 800.0
+  300.0 800.0
+endline
+
+line wall -outline none -clip off
+  100.0 740.0
+  300.0 740.0
+endline
+
+line wall -outline none -clip off
+  100.0 680.0
+  300.0 680.0
+endline
+
+line wall -outline none -clip off
+  100.0 620.0
+  300.0 620.0
+endline
+
+line wall -outline none -clip off
+  100.0 560.0
+  300.0 560.0
+endline
+
+line wall -outline none -clip off
+  100.0 500.0
+  300.0 500.0
+endline
+
+line wall -outline none -clip off
+  100.0 440.0
+  300.0 440.0
+endline
+
+line wall -outline none -clip off
+  100.0 380.0
+  300.0 380.0
+endline
+
+line wall -outline none -clip off
+  100.0 260.0
+  300.0 260.0
+endline
+
+line wall -outline none -clip off
+  100.0 200.0
+  300.0 200.0
+endline
+
+line wall -outline none -clip off
+  100.0 320.0
+  300.0 320.0
+endline
+
+line wall -clip off -outline none
+  300.0 150.0
+  300.0 1050.0
+endline
+
+point 150.0 1010 label -text "wall"
+
+line wall -subtype overlying
+  274.0 852.5
+  271.0 853.0 269.0 858.0 259.5 851.5
+  250.0 845.0 249.0 841.5 242.5 842.0
+  236.0 842.5 225.5 847.5 224.0 849.5
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  266.0 793.5
+  263.5 793.5 258.0 796.0 253.0 795.0
+  248.0 794.0 247.5 792.5 241.0 791.0
+  234.5 789.5 223.0 789.0 221.5 789.5
+  220.0 790.0 215.0 794.0 215.0 794.0
+  smooth off
+endline
+
+line wall -subtype presumed
+  280.5 719.0
+  269.5 717.0 265.0 717.5 260.5 718.0
+  256.0 718.5 252.0 720.0 247.0 720.5
+  242.0 721.0 225.5 720.0 222.0 719.0
+  smooth off
+endline
+
+line wall -subtype clay
+  279.5 547.5
+  277.5 547.5 264.0 545.0 264.0 545.0
+  smooth off
+  264.0 545.0 259.5 533.0 256.0 534.5
+  252.5 536.0 246.5 539.0 242.0 540.5
+  237.5 542.0 227.5 543.5 227.5 543.5
+  smooth off
+endline
+
+line wall -subtype pebbles
+  273.0 480.5
+  269.0 480.0 268.0 479.0 263.0 479.0
+  258.0 479.0 250.0 481.5 247.0 482.0
+  244.0 482.5 241.0 486.0 235.5 485.5
+  230.0 485.0 224.5 482.5 224.5 482.5
+  smooth off
+endline
+
+line wall -subtype debris
+  277.5 420.5
+  275.0 421.5 270.5 424.0 263.0 424.0
+  255.5 424.0 256.0 426.5 250.0 424.5
+  244.0 422.5 243.5 419.0 240.0 418.5
+  236.5 418.0 221.0 422.5 221.0 422.5
+  smooth off
+endline
+
+line wall -subtype blocks
+  271.5 367.5
+  270.0 368.0 267.5 369.0 260.0 368.5
+  252.5 368.0 251.0 366.5 246.0 365.0
+  241.0 363.5 245.0 360.5 236.0 362.0
+  227.0 363.5 218.5 366.0 218.5 366.0
+  smooth off
+endline
+
+line wall -subtype moonmilk
+  276.5 176.5
+  276.5 176.5 268.0 178.5 262.0 178.0
+  256.0 177.5 258.5 180.0 252.5 174.0
+  246.5 168.0 249.0 166.5 243.5 166.0
+  238.0 165.5 225.5 168.5 225.5 168.5
+  smooth off
+endline
+
+line wall -subtype moonmilk
+  225.5 147.5
+  225.5 147.5 241.5 144.5 246.0 146.0
+  250.5 147.5 257.0 150.5 262.0 153.5
+  267.0 156.5 275.5 156.0 277.5 156.0
+  smooth off
+endline
+
+line wall -subtype flowstone
+  280.0 247.0
+  278.5 246.5 281.5 253.5 268.5 247.5
+  255.5 241.5 255.0 241.0 252.0 240.5
+  249.0 240.0 246.0 239.5 243.5 239.5
+  241.0 239.5 231.0 244.5 231.0 244.5
+  smooth off
+  224.0 244.0
+endline
+
+line wall -subtype flowstone
+  220.5 219.0
+  220.5 219.0 236.0 216.5 242.5 216.5
+  249.0 216.5 253.5 214.5 258.0 218.0
+  262.5 221.5 267.0 223.5 271.5 225.5
+  276.0 227.5 282.0 228.0 282.0 228.0
+  smooth off
+endline
+
+line wall -subtype ice
+  274.0 301.5
+  274.0 301.5 268.5 300.5 263.5 299.5
+  258.5 298.5 257.5 300.5 254.0 297.0
+  250.5 293.5 248.5 292.0 246.0 292.0
+  243.5 292.0 234.0 296.0 231.5 296.5
+  229.0 297.0 220.5 299.0 220.5 299.0
+  smooth off
+endline
+
+line wall -subtype ice
+  219.0 278.0
+  221.0 277.5 238.5 271.0 240.0 270.5
+  241.5 270.0 246.0 267.5 253.0 269.5
+  260.0 271.5 269.0 275.5 271.5 277.5
+  274.0 279.5 273.5 280.0 276.5 281.5
+  smooth off
+endline
+
+line wall -subtype blocks
+  217.0 342.0
+  220.0 341.0 231.5 337.0 234.0 337.0
+  236.5 337.0 247.0 335.5 250.5 337.5
+  254.0 339.5 256.5 340.5 260.5 343.0
+  264.5 345.5 270.5 346.0 273.0 346.5
+  smooth off
+endline
+
+line wall -subtype debris
+  217.5 406.0
+  217.5 406.0 221.0 398.5 227.5 398.5
+  234.0 398.5 235.5 398.0 242.5 399.0
+  249.5 400.0 254.5 405.0 257.5 404.0
+  260.5 403.0 274.0 406.0 276.0 405.0
+  smooth off
+endline
+
+line wall -subtype pebbles
+  217.5 462.5
+  221.0 462.5 230.5 464.0 233.5 462.5
+  236.5 461.0 237.0 461.0 242.0 457.5
+  247.0 454.0 253.5 451.0 258.5 453.0
+  263.5 455.0 270.5 456.5 272.5 459.5
+  smooth off
+endline
+
+line wall -subtype clay
+  218.0 525.0
+  222.0 523.0 231.5 519.0 238.5 516.5
+  245.5 514.0 248.0 512.5 256.0 514.5
+  264.0 516.5 266.5 522.0 270.5 524.0
+  274.5 526.0 281.5 529.0 281.5 529.0
+  smooth off
+endline
+
+line wall -subtype sand
+  275.0 593.5
+  275.0 593.5 270.5 591.0 263.5 590.5
+  256.5 590.0 254.0 586.5 245.5 590.5
+  237.0 594.5 230.0 596.0 227.0 595.5
+  smooth off
+endline
+
+line wall -subtype sand
+  223.0 575.5
+  223.0 575.5 243.5 574.0 247.5 574.0
+  251.5 574.0 263.0 575.0 265.0 575.5
+  267.0 576.0 277.5 578.5 277.5 578.5
+  smooth off
+endline
+
+line wall -reverse on -subtype pit
+  275.5 632.0
+  271.0 631.0 265.5 626.5 259.0 626.5
+  252.5 626.5 249.5 626.0 243.0 628.5
+  236.5 631.0 226.0 631.5 226.0 631.5
+  smooth off
+endline
+
+line wall -reverse on -subtype pit
+  217.5 653.5
+  225.0 655.0 232.5 657.0 236.0 656.0
+  239.5 655.0 249.0 653.5 252.5 651.5
+  256.0 649.5 273.0 651.0 273.0 651.0
+  smooth off
+endline
+
+line wall -subtype presumed
+  217.0 687.5
+  222.5 692.0 225.0 698.5 236.0 698.0
+  247.0 697.5 252.5 695.5 258.0 693.0
+  263.5 690.5 272.5 687.5 277.0 692.0
+  smooth off
+endline
+
+line wall -subtype unsurveyed
+  214.5 772.5
+  214.5 772.5 239.5 770.5 243.5 771.0
+  247.5 771.5 262.0 771.0 264.0 771.5
+  smooth off
+endline
+
+line wall -subtype overlying
+  221.5 825.5
+  226.0 826.0 244.0 826.0 251.0 826.5
+  258.0 827.0 273.5 826.0 275.0 826.5
+  smooth off
+endline
+
+line wall -reverse on
+  274.5 1002.5
+  273.0 1004.0 255.5 1009.5 251.0 1006.5
+  246.5 1003.5 242.5 999.0 235.0 997.0
+  227.5 995.0 216.0 998.0 215.5 1000.5
+  smooth off
+endline
+
+line wall -reverse on
+  220.0 1020.0
+  220.0 1020.0 233.83 1003.13 250.0 1017.5
+  261.21 1027.47 273.5 1023.5 275.5 1015.5
+  smooth off
+endline
+
+line wall -reverse on -subtype underlying
+  278.0 885.5
+  278.0 885.5 273.0 882.5 266.5 882.5
+  260.0 882.5 247.5 885.0 244.0 885.5
+  240.5 886.0 224.5 886.0 224.5 886.0
+  smooth off
+endline
+
+line wall -reverse on -subtype underlying
+  222.0 907.5
+  228.0 908.5 238.5 908.0 242.0 907.5
+  245.5 907.0 256.0 903.0 258.5 903.0
+  261.0 903.0 276.0 906.5 276.0 906.5
+  smooth off
+endline
+
+point 150 1010.0 label -text "wall"
+
+point 150 770 label -text "wall - subtype unsurveyed"
+
+point 150 830.0 label -text "wall - subtype overlying"
+
+point 150 890 label -text "wall - subtype  underlying"
+
+point 150 950.0 label -text "wall - subtype  invisible"
+
+point 150 710 label -text "wall - subtype presumed"
+
+point 150 650 label -text "wall - subtype pit"
+
+point 150 590 label -text "wall - subtype sand"
+
+point 150 530 label -text "wall - subtype clay"
+
+point 150 470 label -text "wall - subtype pebbles"
+
+point 150 410 label -text "wall - subtype debris"
+
+point 150 350 label -text "wall - subtype blocks"
+
+point 150 290 label -text "wall - subtype ice"
+
+point 150 230 label -text "wall - subtype flowstone"
+
+point 150 150 label -text "wall - subtype moonmilk"
+
+line wall -reverse on -subtype invisible
+  274.5 944.5
+  267.5 949.0 259.5 953.5 253.5 951.5
+  247.5 949.5 240.0 943.0 233.0 944.0
+  226.0 945.0 220.0 951.0 220.0 951.0
+  smooth off
+endline
+
+line wall -reverse on -outline out -subtype invisible
+  218.5 969.0
+  218.5 969.0 229.5 955.0 241.5 965.5
+  253.5 976.0 271.5 972.5 276.5 963.0
+  smooth off
+endline
+
+line wall -outline none -clip off
+  200.0 1050.0
+  200.0 150.0
+endline
+
+line wall -outline none -clip off
+  100.0 1050.0
+  100.0 150.0
+endline
+
+point 100 150 station -name A2
+
+point 100 1050 station -name A1
+
+endscrap
+
+

@@ -1,0 +1,12 @@
+set xth(ctrl,cp,datlist) {}
+xth_cp_data_tree_insert 1 {} 0   "" "" "length: 1600.20m (surface 0.00m, duplicated 0.00m)\nvertical range: 0.00m (from A1@SymbolTest at 0.00m to A1@SymbolTest at 0.00m)\nnorth-south range: 1249.68m (from A1@SymbolTest at 0.00m to A7@SymbolTest at -1249.68m)\neast-west range: 45.72m (from A10@SymbolTest at 45.72m to A1@SymbolTest at 0.00m)\nnumber of shots: 8\nnumber of stations: 9"
+xth_cp_data_tree_insert 29 1 1 SymbolTest SymbolTest "Symbols Cave" "Symbols Cave" "length: 1600.20m (surface 0.00m, duplicated 0.00m)\nvertical range: 0.00m (from A1@SymbolTest at 0.00m to A1@SymbolTest at 0.00m)\nnorth-south range: 1249.68m (from A1@SymbolTest at 0.00m to A7@SymbolTest at -1249.68m)\neast-west range: 45.72m (from A10@SymbolTest at 45.72m to A1@SymbolTest at 0.00m)\nnumber of shots: 8\nnumber of stations: 9"
+xth_cp_data_tree_create
+set xth(ctrl,cp,maplist) {}
+xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
+xth_cp_map_tree_insert map 1 495X1 p1 1 defaultPlanMap defaultPlanMap "" ""
+xth_cp_map_tree_create
+xth_cp_comp_stat 1600 5
+set xth(th_exit_state) 2
+set xth(th_exit_number) 1707778549
+

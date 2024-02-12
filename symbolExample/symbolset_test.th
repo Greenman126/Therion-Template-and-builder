@@ -1,0 +1,44 @@
+encoding  utf-8
+
+survey SymbolTest -title "Symbols Cave"
+
+  input symbol_Walls.th2
+  input symbol_Lines_A_to_H.th2
+  input symbol_Lines_J_to_R.th2
+  input symbol_Lines_R_to_Z.th2
+  input points.th2
+  
+  centreline
+    declination 0.0 deg
+    date 2023.07.10
+    team "Christian DeCelle" instruments
+    
+    units length feet
+    
+    data normal from to length compass clino
+    
+    A1  A2  1000  180  0  
+    A2  A3  50  180  0  
+    A3  A4  1000  180  0  
+    A4  A5  1000  180  0  
+    A5  A6  1000  180  0  
+    A6  A7  50  180  0  
+    A1  A10 150 90 0
+    A10 A11 1000 180 0  
+  endcentreline
+  
+endsurvey
+
+
+map defaultPlanMap -projection plan
+  WallScrap@SymbolTest   #Pulls planScrap from the survey "defaultSurvey" (which is in caveSketch.th2)
+  LineScrap1@SymbolTest
+  LineScrap2@SymbolTest
+  LineScrap3@SymbolTest
+  PointScrap@SymbolTest
+endmap
+
+#map defaultProfMap -projection elevation
+#  profileScrap@defaultSurvey
+#endmap
+

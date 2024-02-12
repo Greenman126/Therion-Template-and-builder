@@ -1,0 +1,376 @@
+encoding  utf-8
+##XTHERION## xth_me_area_adjust -81.0 -31.5 325.0 1231.0
+##XTHERION## xth_me_area_zoom_to 200
+
+
+
+scrap PointScrap -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
+
+point 50 100 station -name A11
+
+point 50 1100 station -name A10
+
+point 140 1100 label -text "yesy"
+
+point 180 100 flowstone
+point 140 100 label -text "flowstone"
+
+point 180.0 120.0 fixed-ladder
+point 140.0 120.0 label -text "fixed-ladder"
+
+point 180.5 140.5 extra
+point 140 140.5 label -text "extra"
+
+point 180.5 160.0 ex-voto
+point 140.5 160.0 label -text "ex-voto"
+
+point 180.0 180.0 entrance
+point 140.0 180.0 label -text "entrance" 
+
+point 180.5 200.5 electric-light
+point 140.5 200.5 label -text "electric-light"
+
+point 180.5 220.5 disk
+point 140.5 220.5 label -text "disk"
+
+point 180.5 240 disc-stalagmites
+point 140.5 240 label -text "disc-stalagmites"
+
+point 180.5 260 disc-stalactites
+point 140.5 260 label -text "disc-stalactites"
+
+point 180.0 280 disc-pillars
+point 140.0 280 label -text "disc-pillars"
+
+point 180.5 300 disc-stalagmite
+point 140.5 300 label -text "disc-stalagmite"
+
+point 180.5 320 disc-stalactite
+point 140.5 320 label -text "disc-stalactite"
+
+point 180.0 340 disc-pillar
+point 140.0 340 label -text "disc-pillar"
+
+point 180.0 360 dimensions
+point 140.0 360 label -text "dimensions"
+
+point 180.0 380 dig
+point 140.0 380 label -text "dig"
+
+point 180.5 400.0 debris
+point 140.5 400.0 label -text "debris"
+
+point 180.5 420.5 date
+point 140.5 420.5 label -text "date"
+
+point 180.5 440.5 danger
+point 140.5 440.5 label -text "danger"
+
+point 180.0 460.0 curtains
+point 140.0 460.0 label -text "curtains"
+
+point 180.5 480.0 curtain
+point 140.5 480.0 label -text "curtain"
+
+point 180.0 500.5 crystal
+point 140.0 500.5 label -text "crystal"
+
+point 180.5 520 clay-tree
+point 140.5 520 label -text "clay-tree"
+
+point 180.0 540 clay-choke
+point 140.0 540 label -text "clay-choke"
+
+point 180.0 560 clay
+point 140.0 560 label -text "clay"
+
+point 180.5 580 cave-pearl
+point 140.5 580 label -text "cave-pearl"
+
+point 180.5 600 camp
+point 140.5 600 label -text "camp"
+
+point 180.0 620 raft
+point 140.0 620 label -text "raft"
+
+point 180.0 640 bridge
+point 140.0 640 label -text "bridge"
+
+point 180.5 660 breakdown-choke
+point 140.5 660 label -text "breakdown-choke"
+
+point 180.5 680 bones
+point 140.5 680 label -text "bones"
+
+point 180.5 700 blocks
+point 140.5 700 label -text "blocks"
+
+point 180.0 720 bedrock
+point 140.0 720 label -text "bedrock"
+
+point 180.0 740.0 bat
+point 140.0 740.0 label -text "bat"
+
+point 180.0 760 audio
+point 140.0 760 label -text "audio"
+
+point 180.0 780 archeo-material
+point 140.0 780 label -text "archeo-material"
+
+point 180.5 800 archeo-excavation
+point 140.5 800 label -text "archeo-excavation"
+
+point 180.0 820 aragonite
+point 140.0 820 label -text "aragonite"
+
+point 180.5 840 anchor
+point 140.5 840 label -text "anchor"
+
+point 180.5 860 anastomosis
+point 140.5 860 label -text "anastomosis"
+
+point 180.0 880 altitude
+point 140.0 880 label -text "altitude"
+
+point 180.0 900 altar
+point 140.0 900 label -text "altar"
+
+point 180.0 920 air-draught
+point 140.0 920 label -text "air-draught"
+
+point 180 80 flowstone-choke
+point 140 80 label -text "flowstone-choke"
+
+point 180 60 flute
+point 140 60 label -text "flute"
+
+point 180 40 gate
+point 140 40 label -text "gate"
+
+point 180 20 gradient
+point 140 20 label -text "gradient"
+
+point 180 0 guano
+point 140 0 label -text "guano"
+
+point 180 -20 gypsum
+point 140 -20 label -text "gypsum"
+
+point 180 -40 gypsum-flower
+point 140 -40 label -text "gypsum-flower"
+
+point 180 -60 handrail
+point 140 -60 label -text "handrail"
+
+point 180 -80 height -value [4 ft]
+point 177 -80 height -value [+4 ft]
+point 183 -80 height -value [-4 ft]
+point 140 -80 label -text "height<br>-value [4ft], -value [+4ft], -value [-4ft]"
+
+point 180 -100 helictite
+point 140 -100 label -text "helictite"
+
+point 180 -120 helictites
+point 140 -120 label -text "helictites"
+
+point 180 -140 human-bones
+point 140 -140 label -text "human-bones"
+
+point 180 -160 ice
+point 140 -160 label -text "ice"
+
+point 180 -180 ice-pillar
+point 140 -180 label -text "ice-pillar"
+
+point 180 -200 ice-stalactite
+point 140 -200 label -text "ice-stalactite"
+
+point 180 -220 ice-stalagmite
+point 140 -220 label -text "ice-stalagmite"
+
+point 180 -240 karren
+point 140 -240 label -text "karren"
+
+point 180 -260 label
+point 140 -260 label -text "label"
+
+point 180 -280 low-end
+point 140 -280 label -text "low-end"
+
+point 180 -300 map-connection
+point 140 -300 label -text "map-connection"
+
+point 180 -320 masonry
+point 140 -320 label -text "masonry"
+
+point 180 -340 moonmilk
+point 140 -340 label -text "moonmilk"
+
+point 180 -360 mud
+point 140 -360 label -text "mud"
+
+point 180 -380 mudcrack
+point 140 -380 label -text "mudcrack"
+
+point 180 -400 nameplate
+point 140 -400 label -text "nameplate"
+
+point 180 -420 narrow-end
+point 140 -420 label -text "narrow-end"
+
+point 180 -440 no-equipment
+point 140 -440 label -text "no-equipment"
+
+point 180 -460 no-wheelchair
+point 140 -460 label -text "no-wheelchair"
+
+point 180 -480 paleo-material
+point 140 -480 label -text "paleo-material"
+
+point 180 -500 label -text "No display if no value input"
+point 140 -500 label -text "passage-height"
+
+point 175 -520 passage-height -value [4 ft]
+point 180 -520 passage-height -value [+4 ft]
+point 185 -520 passage-height -value [-4 ft]
+point 190 -520 passage-height -value [+3 -5 ft]
+point 140 -520 label -text "passage-height<br>-value [4 ft]<br>-value [+4 ft]<br>-value [-4 ft]<br> -value [+3 -4 ft]"
+
+point 180 -540 pebbles
+point 140 -540 label -text "pebbles"
+
+point 180 -560 pendant
+point 140 -560 label -text "pendant"
+
+point 180 -580 photo
+point 140 -580 label -text "photo"
+
+point 180 -600 pillar
+point 140 -600 label -text "pillar"
+
+point 180 -620 pillar-with-curtains
+point 140 -620 label -text "pillar-with-curtains"
+
+point 180 -640 pillars
+point 140 -640 label -text "pillars"
+
+point 180 -660 pillars-with-curtains
+point 140 -660 label -text "pillars-with-curtains"
+
+point 180 -680 popcorn
+point 140 -680 label -text "popcorn"
+
+point 180 -700 raft
+point 140 -700 label -text "raft"
+
+point 180 -720 raft-cone
+point 140 -720 label -text "raft-cone"
+
+point 180 -740 remark 
+point 140 -740 label -text "remark"
+
+point 180 -760 rimstone-dam
+point 140 -760 label -text "rimstone-dam"
+
+point 180 -780 rimstone-pool
+point 140 -780 label -text "rimstone-pool"
+
+point 180 -800 root
+point 140 -800 label -text "root"
+
+point 180 -820 rope
+point 140 -820 label -text "rope"
+
+point 180 -840 rope-ladder
+point 140 -840 label -text "rope-ladder"
+
+point 180 -860 sand
+point 140 -860 label -text "sand"
+
+point 180 -880 scallop
+point 140 -880 label -text "scallop"
+
+point 180 -900 section
+point 140 -900 label -text "section"
+
+point 180 -920 seed-germination
+point 140 -920 label -text "seed-germination"
+
+point 180 -940 sink
+point 140 -940 label -text "sink"
+
+point 180 -960 snow
+point 140 -960 label -text "snow"
+
+point 180 -980 soda-straw
+point 140 -980 label -text "soda-straw"
+
+point 180 -1000 spring
+point 140 -1000 label -text "spring"
+
+point 180 -1020 stalactite
+point 140 -1020 label -text "stalactite"
+
+point 180 -1040 stalactite-stalagmite
+point 140 -1040 label -text "stalactite-stalagmite"
+
+point 180 -1050 stalactites
+point 140 -1050 label -text "stalactites"
+
+point 180 -1060 stalactites-stalagmites
+point 140 -1060 label -text "stalactites-stalagmites"
+
+point 180 -1080 stalagmite
+point 140 -1080 label -text "stalagmite"
+
+point 180 -1100 stalagmites
+point 140 -1100 label -text "stalagmites"
+
+point 180 -1120 station
+point 140 -1120 label -text "station"
+
+point 180 -1140 station-name
+point 140 -1140 label -text "station-name"
+
+point 180 -1160 steps
+point 140 -1160 label -text "steps"
+
+point 180 -1180 traverse
+point 140 -1180 label -text "traverse"
+
+point 180 -1200 tree-trunk
+point 140 -1200 label -text "tree-trunk"
+
+point 180 -1220 u:user
+point 140 -1220 label -text "u:user"
+
+point 180 -1240 vegetable-debris
+point 140 -1240 label -text "vegetable-debris"
+
+point 180 -1260 via-ferrata
+point 140 -1260 label -text "via-ferrata"
+
+point 180 -1280 volcano
+point 140 -1280 label -text "volcano"
+
+point 180 -1300 walkway
+point 140 -1300 label -text "walkway"
+
+point 180 -1320 wall-calcite
+point 140 -1320 label -text "wall-calcite"
+
+point 180 -1340 water
+point 140 -1340 label -text "water"
+
+point 180 -1360 water-drip
+point 140 -1360 label -text "water-drip"
+
+point 180 -1380 water-flow
+point 140 -1380 label -text "water-flow"
+
+point 180 -1400 wheelchair
+point 140 -1400 label -text "wheelchair"
+
+endscrap
+
+
