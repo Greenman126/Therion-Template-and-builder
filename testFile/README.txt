@@ -1,0 +1,1 @@
+The following files are provided to allow you to test out the transition from topodroid to therion. The files under the "RAW" folder are pulled straight from topodroid, with no edits made. 

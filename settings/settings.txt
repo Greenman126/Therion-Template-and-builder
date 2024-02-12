@@ -1,0 +1,64 @@
+TopoDroid v. 6.2.32 602032
+Buttons Size 3 54
+Text Size 12 
+Level 4 
+Keyboard F no-cursor F 
+Local man F 
+Palettes T 
+Orientation 1 
+Export-format data 0, plot 14, auto-plot 14 
+Survex: eol "\r\n", splay F, LRUD F 
+Compass: swap_LR F, prefix F, splays F 
+Walls: splays T 
+VisualTopo: splays T, at-from F, trox F 
+Ortho LRUD F, angle 0.00, cos 1.00 
+Therion: config F, maps T, stations T, splays F, xvi F, scale 50 
+DXF: acad_version 9, blocks T, spline T layer T
+SVG: shot 2.5, label 1.5, 24, station 32, point 0.5, round-trip F, grid T 2.5, line 2.5, dir F 12.0, splays F 
+SHP: georef-plan F 
+GPX: single-track T 
+KML: stations T, splays F 
+CSV: raw F, separator ',' 
+BT: check 1, autopair T 
+Socket: type 0, delay 0
+Connection mode 1 Z6 T, feedback 1
+Communication DistoX-B T, retry 1, head/tail F
+Packet log F Th2Edit F
+Wait: laser 500, shot 500, data 250, conn 50, command 100
+Calib groups 1, distance 40.00
+Calib algo 0, eps 0.000001, iter 200
+Calib shot download T, raw data 0 
+Min_Algo alpha 0.1, beta 4.0, gamma 1.0, delta 1.0 
+Default Team "Christian DeCelle"
+Midline check: attached F, extend T
+Location: units 1, CRS "Long-Lat" NegAlt. F FineLoc 60 GeoApp 0 EditAlt. T
+Shots: vthr 30.0, hthr 0.0 
+Data: DistoX-backshot-swap F, diving-mode F 
+Data input: backsight F, prev/next T
+L/R extend T BlunderShot F SplayStation F SplayGroup F
+U/D vertical 0.0 L/R horizontal 90.0 count $c
+Geek Import - data mode 0, zipped symbols T
+Timer: wait 5, volume 50
+Recent data T, timeout 30
+Leg: closeness 0.05, nr 3, triple-shot 2, max 100.00, min 0.00
+Splay: vthr 80.0, classes T
+Stations: names 0, init "A0"
+Extend: thr 10.0, manual T, frac F
+Loop: 5 selective 1.0
+Units: length 3.28 [ft], angle 1.00 [deg]
+ThumbSize 200, SavedStations T, LegonlyUpdate F, WithAzimuth F, WithSensors F, Bedding F 
+Plot: zoom 0, drag T, fix-origin F, split F, shift F, levels 0, affine F, stylus 0, slant-xsection F, oblique 0
+Units: icon 1.00, line 1.00, grid 0.61, ruler -1.00
+Size: station 22.0, label 12.0, fixed 1.0 line 1.0
+Select: radius 24.00, pointing 24, shift 60, dot 5.0, multiple F 
+Erase: radius 36.00
+Point: unscaled F
+Line: style 2, type 2, segment 1, continue 0, arrow 8.0, close T
+Bezier: step 0.01, accuracy 0.10, corner 0.10
+Weed: distance 0.10, length 2.00, buffer 0.10
+Area: border F
+Backup: nr 5, interval 60
+XSections: shared F, auto-export T, point T
+Actions: snap T, curve F, straight T 45.0
+Splay: alpha 80, color 2, splay-dash 3, vert 45.0, horiz 60.0, section 60.0 color 65347 7190271 16712960
+Accuracy: G 1.00, M 1.00, dip 2.00, sibling 5.00
