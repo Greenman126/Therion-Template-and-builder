@@ -1,5 +1,77 @@
 encoding  utf-8
+##########README########
+##
+## This file contains Layout Templates and Symbol Modifications
+##  Templates - Clean, Working, debugTemplate
+##  Symbol modifications can be see by running the files in symbolExample
+
+
+#### Template Types ####
+##
+## Clean   - a clean map without survey stations
+## Working - shows lineplot and survey stations
+## debugTemplate will enable the debug settings, useful for combining scraps
+
+layout cleanTemplate
+  copy symbolset
+  symbol-hide group centreline
+  symbol-hide point station
+  symbol-hide line survey
+endlayout
+
+layout workingTemplate
+  copy symbolset
+  symbol-show group centreline
+  symbol-show point station
+  symbol-show line survey
+  
+  debug station-names
+
+  code metapost
+  %this is added here and not symbolset because then it applies even when turned off
+    def l_survey_cave (expr p) =
+      pickup PenC;
+      draw p withcolor 0.5red;
+    enddef;
+  endcode
+endlayout
+
+layout debugTemplate
+  copy symbolset
+  
+  symbol-show group centreline
+  symbol-show point station
+  symbol-show line survey
+  debug all
+  
+  code metapost
+    def l_survey_cave (expr p) =
+    pickup PenC;
+    draw p withcolor 0.5green;
+   
+  enddef;
+  endcode
+endlayout
+
+##### Optional Map additions #####
+
+layout ColorElevation
+    color map-fg altitude
+    opacity 40
+endlayout
+
+##### Testing #####
+
+layout Final
+  copy cleanTemplate
+  
+  map-image 0 0 nw final_prof.pdf
+  #map-image 0 0 nw clean_plan_draft.pdf
+endlayout
+
+
 #####################################################################################
+#########################SYMBOLSET MODIFICATIONS#####################################
 ###############Don't mess with below unless you love metapost########################
 #####################################################################################
 

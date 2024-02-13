@@ -1,374 +1,911 @@
 encoding  utf-8
-##XTHERION## xth_me_area_adjust -81.0 -31.5 325.0 1231.0
+##XTHERION## xth_me_area_adjust -130.0 -1530.5 549.5 1060.5
 ##XTHERION## xth_me_area_zoom_to 200
 
 
 
 scrap PointScrap -scale [0 0 1600 0 0.0 0.0 40.64 0.0 m]
 
-point 50 100 station -name A11
+point 50 -80 station -name A11
 
-point 50 1100 station -name A10
-
-point 140 1100 label -text "yesy"
+point 50 920 station -name A10
 
 point 180 100 flowstone
+
 point 140 100 label -text "flowstone"
 
 point 180.0 120.0 fixed-ladder
+
 point 140.0 120.0 label -text "fixed-ladder"
 
 point 180.5 140.5 extra
+
 point 140 140.5 label -text "extra"
 
 point 180.5 160.0 ex-voto
+
 point 140.5 160.0 label -text "ex-voto"
 
 point 180.0 180.0 entrance
-point 140.0 180.0 label -text "entrance" 
+
+point 140.0 180.0 label -text "entrance"
 
 point 180.5 200.5 electric-light
+
 point 140.5 200.5 label -text "electric-light"
 
 point 180.5 220.5 disk
+
 point 140.5 220.5 label -text "disk"
 
 point 180.5 240 disc-stalagmites
+
 point 140.5 240 label -text "disc-stalagmites"
 
 point 180.5 260 disc-stalactites
+
 point 140.5 260 label -text "disc-stalactites"
 
 point 180.0 280 disc-pillars
+
 point 140.0 280 label -text "disc-pillars"
 
 point 180.5 300 disc-stalagmite
+
 point 140.5 300 label -text "disc-stalagmite"
 
 point 180.5 320 disc-stalactite
+
 point 140.5 320 label -text "disc-stalactite"
 
 point 180.0 340 disc-pillar
+
 point 140.0 340 label -text "disc-pillar"
 
 point 180.0 360 dimensions
+
 point 140.0 360 label -text "dimensions"
 
 point 180.0 380 dig
+
 point 140.0 380 label -text "dig"
 
 point 180.5 400.0 debris
+
 point 140.5 400.0 label -text "debris"
 
-point 180.5 420.5 date
+point 180.5 420.5 date -value [2024.5.6]
+
 point 140.5 420.5 label -text "date"
 
 point 180.5 440.5 danger
+
 point 140.5 440.5 label -text "danger"
 
 point 180.0 460.0 curtains
+
 point 140.0 460.0 label -text "curtains"
 
 point 180.5 480.0 curtain
+
 point 140.5 480.0 label -text "curtain"
 
 point 180.0 500.5 crystal
+
 point 140.0 500.5 label -text "crystal"
 
 point 180.5 520 clay-tree
+
 point 140.5 520 label -text "clay-tree"
 
 point 180.0 540 clay-choke
+
 point 140.0 540 label -text "clay-choke"
 
 point 180.0 560 clay
+
 point 140.0 560 label -text "clay"
 
 point 180.5 580 cave-pearl
+
 point 140.5 580 label -text "cave-pearl"
 
 point 180.5 600 camp
+
 point 140.5 600 label -text "camp"
 
 point 180.0 620 raft
+
 point 140.0 620 label -text "raft"
 
 point 180.0 640 bridge
+
 point 140.0 640 label -text "bridge"
 
 point 180.5 660 breakdown-choke
+
 point 140.5 660 label -text "breakdown-choke"
 
 point 180.5 680 bones
+
 point 140.5 680 label -text "bones"
 
 point 180.5 700 blocks
+
 point 140.5 700 label -text "blocks"
 
 point 180.0 720 bedrock
+
 point 140.0 720 label -text "bedrock"
 
 point 180.0 740.0 bat
+
 point 140.0 740.0 label -text "bat"
 
 point 180.0 760 audio
+
 point 140.0 760 label -text "audio"
 
 point 180.0 780 archeo-material
+
 point 140.0 780 label -text "archeo-material"
 
 point 180.5 800 archeo-excavation
+
 point 140.5 800 label -text "archeo-excavation"
 
 point 180.0 820 aragonite
+
 point 140.0 820 label -text "aragonite"
 
 point 180.5 840 anchor
+
 point 140.5 840 label -text "anchor"
 
 point 180.5 860 anastomosis
+
 point 140.5 860 label -text "anastomosis"
 
-point 180.0 880 altitude
-point 140.0 880 label -text "altitude"
+point 180.0 880 altitude -value [50 ft]
+
+point 140.0 880 label -text "altitude<br>-value [50 ft]"
 
 point 180.0 900 altar
+
 point 140.0 900 label -text "altar"
 
 point 180.0 920 air-draught
+
 point 140.0 920 label -text "air-draught"
 
 point 180 80 flowstone-choke
+
 point 140 80 label -text "flowstone-choke"
 
 point 180 60 flute
+
 point 140 60 label -text "flute"
 
 point 180 40 gate
+
 point 140 40 label -text "gate"
 
 point 180 20 gradient
+
 point 140 20 label -text "gradient"
 
 point 180 0 guano
+
 point 140 0 label -text "guano"
 
 point 180 -20 gypsum
+
 point 140 -20 label -text "gypsum"
 
 point 180 -40 gypsum-flower
+
 point 140 -40 label -text "gypsum-flower"
 
 point 180 -60 handrail
+
 point 140 -60 label -text "handrail"
 
 point 180 -80 height -value [4 ft]
-point 177 -80 height -value [+4 ft]
-point 183 -80 height -value [-4 ft]
-point 140 -80 label -text "height<br>-value [4ft], -value [+4ft], -value [-4ft]"
+
+point 175.0 -80.5 height -value [+4 ft]
+
+point 185.0 -80.0 height -value [-4 ft]
+
+point 168.0 -81.0 label -text "height<br>-value [4ft], -value [+4ft], -value [-4ft]" -align left
 
 point 180 -100 helictite
+
 point 140 -100 label -text "helictite"
 
 point 180 -120 helictites
+
 point 140 -120 label -text "helictites"
 
 point 180 -140 human-bones
+
 point 140 -140 label -text "human-bones"
 
 point 180 -160 ice
+
 point 140 -160 label -text "ice"
 
 point 180 -180 ice-pillar
+
 point 140 -180 label -text "ice-pillar"
 
 point 180 -200 ice-stalactite
+
 point 140 -200 label -text "ice-stalactite"
 
 point 180 -220 ice-stalagmite
+
 point 140 -220 label -text "ice-stalagmite"
 
 point 180 -240 karren
+
 point 140 -240 label -text "karren"
 
 point 180 -260 label
+
 point 140 -260 label -text "label"
 
 point 180 -280 low-end
+
 point 140 -280 label -text "low-end"
 
 point 180 -300 map-connection
+
 point 140 -300 label -text "map-connection"
 
 point 180 -320 masonry
+
 point 140 -320 label -text "masonry"
 
 point 180 -340 moonmilk
+
 point 140 -340 label -text "moonmilk"
 
 point 180 -360 mud
+
 point 140 -360 label -text "mud"
 
 point 180 -380 mudcrack
+
 point 140 -380 label -text "mudcrack"
 
 point 180 -400 nameplate
+
 point 140 -400 label -text "nameplate"
 
 point 180 -420 narrow-end
+
 point 140 -420 label -text "narrow-end"
 
 point 180 -440 no-equipment
+
 point 140 -440 label -text "no-equipment"
 
 point 180 -460 no-wheelchair
+
 point 140 -460 label -text "no-wheelchair"
 
 point 180 -480 paleo-material
+
 point 140 -480 label -text "paleo-material"
 
 point 180 -500 label -text "No display if no value input"
+
 point 140 -500 label -text "passage-height"
 
 point 175 -520 passage-height -value [4 ft]
+
 point 180 -520 passage-height -value [+4 ft]
+
 point 185 -520 passage-height -value [-4 ft]
+
 point 190 -520 passage-height -value [+3 -5 ft]
+
 point 140 -520 label -text "passage-height<br>-value [4 ft]<br>-value [+4 ft]<br>-value [-4 ft]<br> -value [+3 -4 ft]"
 
 point 180 -540 pebbles
+
 point 140 -540 label -text "pebbles"
 
 point 180 -560 pendant
+
 point 140 -560 label -text "pendant"
 
 point 180 -580 photo
+
 point 140 -580 label -text "photo"
 
 point 180 -600 pillar
+
 point 140 -600 label -text "pillar"
 
 point 180 -620 pillar-with-curtains
+
 point 140 -620 label -text "pillar-with-curtains"
 
 point 180 -640 pillars
+
 point 140 -640 label -text "pillars"
 
 point 180 -660 pillars-with-curtains
+
 point 140 -660 label -text "pillars-with-curtains"
 
 point 180 -680 popcorn
+
 point 140 -680 label -text "popcorn"
 
 point 180 -700 raft
+
 point 140 -700 label -text "raft"
 
 point 180 -720 raft-cone
+
 point 140 -720 label -text "raft-cone"
 
-point 180 -740 remark 
+line border -close on -subtype invisible
+  282.0 -21.5
+  277.0 -24.5 272.0 -27.5 275.0 -37.0
+  278.0 -46.5 280.0 -50.5 286.0 -49.0
+  292.0 -47.5 299.5 -42.0 295.5 -35.5
+  291.5 -29.0 287.0 -18.5 282.0 -21.5
+endline
+
+line border -close on -subtype invisible
+  284.0 16.0
+  273.5 14.0 272.5 21.5 272.0 8.0
+  271.5 -5.5 269.0 -12.0 280.0 -11.5
+  291.0 -11.0 288.0 -13.0 292.5 -8.5
+  297.0 -4.0 297.0 3.0 294.5 6.5
+  292.0 10.0 294.5 18.0 284.0 16.0
+endline
+
+line border -close on -subtype invisible
+  280.5 55.5
+  269.5 56.0 264.5 57.0 263.5 47.5
+  262.5 38.0 262.5 36.0 269.5 31.5
+  276.5 27.0 283.5 27.0 286.5 32.0
+  289.5 37.0 292.0 41.5 291.5 46.5
+  291.0 51.5 291.5 55.0 280.5 55.5
+endline
+
+line border -close on -subtype invisible
+  283.5 93.0
+  275.5 89.5 266.5 82.0 277.5 72.5
+  288.5 63.0 292.0 65.0 294.0 74.0
+  296.0 83.0 291.5 96.5 283.5 93.0
+endline
+
+line border -id l274-293-128 -close on -subtype invisible
+  283.0 150.5
+  277.0 149.0 266.5 147.5 265.5 139.0
+  264.5 130.5 259.5 125.5 270.0 121.5
+  280.5 117.5 290.0 114.5 293.0 124.5
+  296.0 134.5 289.0 152.0 283.0 150.5
+endline
+
+line border -id l273-292-188 -close on -subtype invisible
+  280.5 196.0
+  274.0 195.0 266.0 197.5 269.0 184.0
+  272.0 170.5 276.0 166.5 281.5 166.0
+  287.0 165.5 290.0 168.5 291.0 176.5
+  292.0 184.5 293.0 186.0 291.5 188.0
+  290.0 190.0 287.0 197.0 280.5 196.0
+endline
+
+line border -id l272-294-219 -close on -subtype invisible
+  283.5 226.5
+  279.5 226.5 274.0 228.0 271.0 221.0
+  268.0 214.0 263.0 215.5 271.0 211.5
+  279.0 207.5 276.5 205.0 285.0 207.0
+  293.5 209.0 294.0 216.5 295.0 219.0
+  296.0 221.5 287.5 226.5 283.5 226.5
+endline
+
+line border -id l271-290-253 -close on -subtype invisible
+  282.0 265.5
+  282.0 265.5 272.0 264.5 269.0 259.0
+  266.0 253.5 266.0 251.5 269.5 247.0
+  273.0 242.5 269.0 239.5 277.5 241.5
+  286.0 243.5 290.0 253.0 290.0 253.0
+  smooth off
+  282.0 265.5
+endline
+
+line border -id l270-289-297 -close on -subtype invisible
+  278.5 314.5
+  274.0 313.0 272.5 320.5 271.0 306.5
+  269.5 292.5 269.0 287.0 277.0 285.0
+  285.0 283.0 287.0 281.0 289.0 287.0
+  291.0 293.0 287.5 305.0 287.5 305.0
+  smooth off
+  287.5 305.0 283.0 316.0 278.5 314.5
+endline
+
+line border -id l269-291-331 -close on -subtype invisible
+  280.5 351.5
+  274.5 350.0 275.5 352.5 272.5 343.5
+  269.5 334.5 265.0 328.0 275.5 326.0
+  286.0 324.0 287.0 320.0 289.5 326.5
+  292.0 333.0 292.0 337.5 290.0 340.5
+  288.0 343.5 286.5 353.0 280.5 351.5
+endline
+
+line wall -subtype presumed
+  392.0 816.0
+  379.0 816.0
+endline
+
+line wall -subtype presumed
+  377.0 790.0
+  377.0 790.0 387.0 788.5 389.5 790.0
+endline
+
+point 332.0 777.0 label -text "Paul\'s Cave" -align right -scale l
+
+point 404.0 801.0 no-wheelchair
+
+point 390.0 802.5 debris
+
+point 419.0 772.5 continuation -text "10w10h rocky<br>could not pass"
+
+line wall -subtype invisible
+  389.5 790.0
+  389.5 790.0 402.0 797.5 392.0 816.0
+  subtype invisible
+endline
+
+line arrow
+  414.5 776.5
+  397.5 791.5
+endline
+
+line wall
+  379.0 816.0
+  379.0 816.0 373.5 817.5 368.5 816.5
+  363.5 815.5 361.5 815.5 356.0 816.5
+  350.5 817.5 348.0 820.5 342.5 820.0
+  337.0 819.5 331.5 820.5 327.0 818.5
+  322.5 816.5 315.0 814.0 315.0 814.0
+  smooth off
+endline
+
+line wall
+  315.0 788.0
+  319.5 791.5 319.5 796.5 331.0 797.0
+  342.5 797.5 348.0 798.5 354.5 794.0
+  361.0 789.5 371.5 789.0 377.0 790.0
+endline
+
+line border -id l268-290-375 -close on -subtype invisible
+  280.5 385.5
+  275.5 384.5 249.5 390.5 248.5 381.5
+  247.5 372.5 246.0 364.5 251.0 361.0
+  256.0 357.5 277.0 356.5 283.5 361.0
+  290.0 365.5 292.0 373.0 291.5 374.5
+  291.0 376.0 285.5 386.5 280.5 385.5
+endline
+
+line border -id l267-292-419 -close on -subtype invisible
+  277.5 429.5
+  275.5 427.0 266.5 427.5 266.5 418.5
+  266.5 409.5 270.0 406.0 273.5 403.0
+  277.0 400.0 282.5 400.0 285.5 402.5
+  288.5 405.0 291.5 415.0 292.0 417.5
+  292.5 420.0 279.5 432.0 277.5 429.5
+endline
+
+line border -id l266-290-467 -close on -subtype invisible
+  278.5 479.0
+  272.5 477.0 275.0 480.0 271.0 468.5
+  267.0 457.0 262.5 452.0 271.5 450.0
+  280.5 448.0 284.0 446.0 287.0 452.0
+  290.0 458.0 289.5 463.5 289.5 467.0
+  289.5 470.5 284.5 481.0 278.5 479.0
+endline
+
+line border -id l265-292-521 -close on -subtype invisible
+  282.0 529.0
+  279.0 528.0 278.5 527.5 273.0 518.0
+  267.5 508.5 263.0 503.5 271.0 500.5
+  279.0 497.5 282.0 490.5 287.0 498.5
+  292.0 506.5 293.5 520.0 293.5 520.0
+  smooth off
+  293.5 520.0 285.0 530.0 282.0 529.0
+endline
+
+point 255.5 215.5 label -text "sump" -align left
+
+point 252.0 133.5 label -text "water" -align left
+
+area water
+  l274-293-128
+endarea
+
+area u:user
+  l273-292-188
+endarea
+
+area sump
+  l272-294-219
+endarea
+
+point 255.5 252.5 label -text "stalagmite" -align left
+
+point 253.5 182.0 label -text "u:user" -align left
+
+point 256.5 299.0 label -text "stalactite-stalagmite" -align left
+
+area stalagmite
+  l271-290-253
+endarea
+
+area stalactite-stalagmite
+  l270-289-297
+endarea
+
+point 256.0 337.5 label -text "stalactite" -align left
+
+area stalactite
+  l269-291-331
+endarea
+
+area snow
+  l268-290-375
+endarea
+
+point 253.0 415.0 label -text "sand" -align left
+
+point 239.0 372.5 label -text "snow" -align left
+
+area sand
+  l267-292-419
+endarea
+
+point 259.0 458.0 label -text "pillar-with-curtains" -align left
+
+area pillar-with-curtains
+  l266-290-467
+endarea
+
+point 257.0 507.5 label -text "pillar" -align left
+
+area pillar
+  l265-292-521
+endarea
+
+point 257.5 556.5 label -text "pebbles" -align left
+
+area pebbles
+  l264-295-562
+endarea
+
+area mudcrack
+  l263-292-599
+endarea
+
+point 257.5 639.5 label -text "moonmilk" -align left
+
+point 257.5 595.0 label -text "mudcrack" -align left
+
+area moonmilk
+  l262-295-647
+endarea
+
+area ice
+  l261-296-678
+endarea
+
+point 256.5 671.0 label -text "ice" -align left
+
+point 257.0 706.5 label -text "flowstone" -align left
+
+area flowstone
+  l260-294-716
+endarea
+
+point 258.0 755.5 label -text "Dimensions" -align left
+
+area debris
+  l258-294-810
+endarea
+
+area clay
+  l257-291-836
+endarea
+
+area blocks
+  l256-284-871
+endarea
+
+point 246.5 802.5 label -text "debris" -align left
+
+point 243.0 838.0 label -text "clay" -align left
+
+point 237.0 869.0 label -text "blocks" -align left
+
+point 252.0 900.5 label -text "bedrock" -align left
+
+area bedrock
+  l255-285-893
+endarea
+
+line border -id l264-295-562 -close on -subtype invisible
+  280.5 572.5
+  277.5 572.0 278.0 576.0 274.0 567.5
+  270.0 559.0 267.0 556.5 273.0 551.5
+  279.0 546.5 275.5 544.0 284.5 546.5
+  293.5 549.0 296.0 561.5 294.5 563.5
+  293.0 565.5 283.5 573.0 280.5 572.5
+endline
+
+line border -id l263-292-599 -close on -subtype invisible
+  286.5 613.5
+  282.0 613.0 282.5 615.0 276.5 604.5
+  270.5 594.0 271.0 586.5 279.0 585.0
+  287.0 583.5 287.0 581.5 290.0 588.0
+  293.0 594.5 292.0 607.5 292.0 607.5
+  smooth off
+  292.0 607.5 291.0 614.0 286.5 613.5
+endline
+
+line border -id l262-295-647 -close on -subtype invisible
+  284.0 650.0
+  279.5 649.0 279.0 653.5 276.5 646.5
+  274.0 639.5 270.5 636.0 277.0 633.5
+  283.5 631.0 285.5 627.5 290.0 632.0
+  294.5 636.5 295.0 645.5 295.0 645.5
+  smooth off
+  295.0 645.5 288.5 651.0 284.0 650.0
+endline
+
+line border -id l261-296-678 -close on -subtype invisible
+  283.0 684.0
+  280.0 683.5 272.0 687.5 270.5 680.5
+  269.0 673.5 264.5 671.5 273.0 666.0
+  281.5 660.5 290.5 655.5 293.5 659.0
+  296.5 662.5 296.0 677.0 296.0 677.0
+  smooth off
+  296.0 677.0 286.0 684.5 283.0 684.0
+endline
+
+line border -id l260-294-716 -close on -subtype invisible
+  280.5 724.0
+  278.5 723.5 269.5 722.5 268.5 717.0
+  267.5 711.5 267.0 713.0 269.5 707.0
+  272.0 701.0 274.5 696.0 281.5 697.0
+  288.5 698.0 294.5 701.5 295.0 705.5
+  295.5 709.5 293.0 712.5 294.5 716.0
+  296.0 719.5 282.5 724.5 280.5 724.0
+endline
+
+line border -id l259-290-770 -close on -subtype invisible
+  278.5 776.5
+  270.0 775.5 272.0 778.0 268.5 768.0
+  265.0 758.0 261.5 753.5 269.0 749.0
+  276.5 744.5 278.0 739.5 284.5 743.5
+  291.0 747.5 292.5 756.0 293.0 759.5
+  293.5 763.0 287.0 777.5 278.5 776.5
+endline
+
+line border -id l258-294-810 -close on -subtype invisible
+  281.5 812.5
+  274.0 812.5 264.0 815.5 261.0 810.0
+  258.0 804.5 258.0 797.0 263.5 791.0
+  269.0 785.0 276.0 790.5 283.0 791.0
+  290.0 791.5 293.5 795.0 294.0 799.5
+  294.5 804.0 293.5 809.0 293.5 809.0
+  smooth off
+  293.5 809.0 289.0 812.5 281.5 812.5
+endline
+
+line border -id l257-291-836 -close on -subtype invisible
+  276.5 849.5
+  274.0 849.5 258.5 851.5 257.5 848.0
+  256.5 844.5 257.66 835.23 262.0 830.5
+  267.5 824.5 280.5 828.5 285.0 830.0
+  289.5 831.5 289.0 832.5 290.0 836.5
+  291.0 840.5 289.0 846.0 289.0 846.0
+  smooth off
+  289.0 846.0 279.0 849.5 276.5 849.5
+endline
+
+line border -id l256-284-871 -close on -subtype invisible
+  290.0 882.0
+  290.0 882.0 253.0 882.0 249.0 878.0
+  245.0 874.0 249.0 864.0 255.0 861.0
+  261.0 858.0 288.0 857.5 291.5 859.0
+  295.0 860.5 291.5 872.0 291.5 872.0
+  smooth off
+  290.0 882.0
+endline
+
+line border -id l255-285-893 -close on -subtype invisible
+  276.5 914.5
+  276.5 914.5 267.0 915.0 265.0 910.0
+  263.0 905.0 256.5 897.5 266.0 893.5
+  275.5 889.5 280.5 889.5 284.0 892.5
+  287.5 895.5 288.5 907.0 288.5 907.0
+  smooth off
+  276.5 914.5
+endline
+
+line wall
+  300.0 930.5
+  300.0 -1400.0
+endline
+
+line wall
+  120.0 928.5
+  120.0 -1400.0
+endline
+
+line wall -outline none
+  210.0 930.0
+  210.0 -1400.0
+endline
+
+point 180 -740 remark -text "This is a remark"
+
 point 140 -740 label -text "remark"
 
 point 180 -760 rimstone-dam
+
 point 140 -760 label -text "rimstone-dam"
 
 point 180 -780 rimstone-pool
+
 point 140 -780 label -text "rimstone-pool"
 
 point 180 -800 root
+
 point 140 -800 label -text "root"
 
 point 180 -820 rope
+
 point 140 -820 label -text "rope"
 
 point 180 -840 rope-ladder
+
 point 140 -840 label -text "rope-ladder"
 
 point 180 -860 sand
+
 point 140 -860 label -text "sand"
 
 point 180 -880 scallop
+
 point 140 -880 label -text "scallop"
 
-point 180 -900 section
+point 180 -900 label -text "No symbol<br>must be associated with xsec"
+
 point 140 -900 label -text "section"
 
 point 180 -920 seed-germination
+
 point 140 -920 label -text "seed-germination"
 
 point 180 -940 sink
+
 point 140 -940 label -text "sink"
 
 point 180 -960 snow
+
 point 140 -960 label -text "snow"
 
 point 180 -980 soda-straw
+
 point 140 -980 label -text "soda-straw"
 
 point 180 -1000 spring
+
 point 140 -1000 label -text "spring"
 
 point 180 -1020 stalactite
+
 point 140 -1020 label -text "stalactite"
 
 point 180 -1040 stalactite-stalagmite
+
 point 140 -1040 label -text "stalactite-stalagmite"
 
 point 180 -1050 stalactites
+
 point 140 -1050 label -text "stalactites"
 
 point 180 -1060 stalactites-stalagmites
+
 point 140 -1060 label -text "stalactites-stalagmites"
 
 point 180 -1080 stalagmite
+
 point 140 -1080 label -text "stalagmite"
 
 point 180 -1100 stalagmites
+
 point 140 -1100 label -text "stalagmites"
 
-point 180 -1120 station
-point 140 -1120 label -text "station"
+point 199.0 -1122.0 station -subtype fixed
+
+point 193.0 -1120.5 station -subtype natural
+
+point 186.0 -1121.0 station -subtype painted
+
+point 177.5 -1120.5 station -subtype temporary
+
+point 171.0 -1120.0 station
+
+point 162.5 -1121.0 label -text [station<br>no subtype, temporary, painted, natural, fixed] -align left
 
 point 180 -1140 station-name
+
 point 140 -1140 label -text "station-name"
 
 point 180 -1160 steps
+
 point 140 -1160 label -text "steps"
 
 point 180 -1180 traverse
+
 point 140 -1180 label -text "traverse"
 
 point 180 -1200 tree-trunk
+
 point 140 -1200 label -text "tree-trunk"
 
 point 180 -1220 u:user
+
 point 140 -1220 label -text "u:user"
 
 point 180 -1240 vegetable-debris
+
 point 140 -1240 label -text "vegetable-debris"
 
 point 180 -1260 via-ferrata
+
 point 140 -1260 label -text "via-ferrata"
 
 point 180 -1280 volcano
+
 point 140 -1280 label -text "volcano"
 
 point 180 -1300 walkway
+
 point 140 -1300 label -text "walkway"
 
 point 180 -1320 wall-calcite
+
 point 140 -1320 label -text "wall-calcite"
 
 point 180 -1340 water
+
 point 140 -1340 label -text "water"
 
 point 180 -1360 water-drip
+
 point 140 -1360 label -text "water-drip"
 
-point 180 -1380 water-flow
-point 140 -1380 label -text "water-flow"
+point 194.0 -1381.0 water-flow -subtype paleo
+
+point 186.0 -1381.0 water-flow -subtype intermittent
+
+point 178.5 -1381.5 water-flow -subtype permanent
+
+point 170.0 -1381.0 water-flow
+
+point 161.0 -1381.5 label -align left -text [water-flow<br>no subtype, permanent, intermittent, paleo]
 
 point 180 -1400 wheelchair
+
 point 140 -1400 label -text "wheelchair"
 
 endscrap

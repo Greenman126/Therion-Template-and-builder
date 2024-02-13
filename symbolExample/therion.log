@@ -17,12 +17,12 @@ processing survey data ...
  4> 
  5> Survey contains 9 survey stations, joined by 8 shots.
  6> There are 0 loops.
- 7> Total length of survey shots = 1600.20m (1600.20m adjusted)
- 8> Total plan length of survey shots = 1600.20m
+ 7> Total length of survey shots = 1607.82m (1607.82m adjusted)
+ 8> Total plan length of survey shots = 1607.82m
  9> Total vertical length of survey shots =    0.00m
 10> Vertical range = 0.00m (from 9 at 0.00m to 9 at 0.00m)
 11> North-South range = 1249.68m (from 8 at 0.00m to 7 at -1249.68m)
-12> East-West range = 45.72m (from 9 at 45.72m to 1 at 0.00m)
+12> East-West range = 53.34m (from 9 at 53.34m to 1 at 0.00m)
 13>    2 1-nodes.
 14>    7 2-nodes.
 15> 
@@ -52,9 +52,9 @@ S     0.00 LineScrap2@SymbolTest ()
 S     0.00 LineScrap3@SymbolTest ()
 S     0.00 PointScrap@SymbolTest ()
 ########## end of export maps & scraps selection ###############
-writing wallSymbols.pdf ...
+writing Symbols.pdf ...
 ####################### metapost log file ########################
-This is MetaPost, version 2.02 (TeX Live 2023) (kpathsea version 6.3.5)  12 FEB 2024 16:55
+This is MetaPost, version 2.02 (TeX Live 2023) (kpathsea version 6.3.5)  13 FEB 2024 12:15
 **data.mp
 (c:/texlive/2023/texmf-dist/metapost/base/mpost.mp
 (c:/texlive/2023/texmf-dist/metapost/base/plain.mp
@@ -62,36 +62,37 @@ Preloading the plain mem file, version 1.005) ) (./data.mp
 {randomseed:=42}
  [1] [2] [3] [4]
 [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
-[1] [2] [3]
-[Warning: Invalid stairs definition in scrap LineScrap3@SymbolTest] [4] [5]
-[6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19]
+[1] [2] [3] [4]
+[Warning: Invalid stairs definition in scrap LineScrap3@SymbolTest] [5] [6]
+[7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20]
 (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp) (./mptextmp.mp)
-(./mptextmp.mp) (./mptextmp.mp) [20] [21] [22] [23] [24] [25] [26] [27] [28]
-[29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43]
-[44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58]
-[59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73]
-[74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88]
-[89] [90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101] [102] [103]
-[104] [105] [106] [107] [108] [109] [110] [111] [112] [113] [114] [115] [116]
-[117] [118] [119] [120] [121] [122] [123] [124] [125] [126] [127] [128] [129]
-[130] [131] [132] [133] [134] [135] [136] [137] [138] [139] [140] [141] [142]
-[143] [144] [145] [146] [147] [148] [149] [150] [151] [152] [153] [154] [155]
-[156] [157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167] [168]
-[169] )
+(./mptextmp.mp) (./mptextmp.mp) [21] [22] [23] [24] [25] [26] [27] [28] [29]
+[30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44]
+[45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59]
+[60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74]
+[75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89]
+[90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101] [102] [103] [104]
+[105] [106] [107] [108] [109] [110] [111] [112] [113] [114] [115] [116] [117]
+[118] [119] [120] [121] [122] [123] [124] [125] [126] [127] [128] [129] [130]
+[131] [132] [133] [134] [135] [136] [137] [138] [139] [140] [141] [142] [143]
+[144] [145] [146] [147] [148] [149] [150] [151] [152] [153] [154] [155] [156]
+[157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169]
+[170] [171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
+[183] [184] [185] [186] [187] [188] [189] [190] [191] [192] )
  
 Here is how much of MetaPost's memory you used:
- 27607 strings using 812998 characters
- 4022072 bytes of node memory
- 1906 symbolic tokens
- 10i,82n,20p,802b,5f stack positions out of 16i,98n,22p,950b,6f
-183 output files written: data-patt.1 .. data.169
+ 30634 strings using 948607 characters
+ 4637280 bytes of node memory
+ 1911 symbolic tokens
+ 11i,82n,26p,804b,5f stack positions out of 16i,98n,32p,950b,6f
+206 output files written: data-patt.1 .. data.192
 
 
 #################### end of metapost log file ####################
 converting scraps ... done
 making map ... done
 ######################## pdftex log file #########################
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdftex 2024.1.10)  12 FEB 2024 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdftex 2024.1.10)  13 FEB 2024 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -100,40 +101,41 @@ entering extended mode
 (c:/texlive/2023/texmf-dist/tex/generic/pdftex/glyphtounicode.tex))
 (./th_fontdef.tex{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 )
-(./th_formdef.tex) (./th_pagedef.tex (./th_legend.tex)) (./th_pages.tex)
- 225 numeric registers used out of 32768
-
-[1] ) 
+(./th_formdef.tex
+Normal \count register pool exhausted, switching to extended pool.)
+(./th_pagedef.tex (./th_legend.tex)) (./th_pages.tex)
+ 253 numeric registers used out of 32768
+ [1] ) 
 Here is how much of TeX's memory you used:
- 451 strings out of 494595
- 5233 string characters out of 11900560
- 12094182 words of memory out of 24000000
- 2109 multiletter control sequences out of 15000+600000
+ 483 strings out of 494595
+ 5455 string characters out of 11900560
+ 12165840 words of memory out of 24000000
+ 2141 multiletter control sequences out of 15000+600000
  21229 words of font info for 66 fonts, out of 12000000 for 9000
  1416 hyphenation exceptions out of 8191
- 12i,5n,7p,383b,76s stack positions out of 10000i,1000n,20000p,12000000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/
-texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on data.pdf (1 page, 187222 bytes).
+ 12i,5n,9p,515b,76s stack positions out of 10000i,1000n,20000p,12000000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:
+/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
+Output written on data.pdf (1 page, 290569 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
+ 443 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 1109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1283 words of extra memory for PDF output out of 10000 (max. 10000000)
 
 
 ##################### end of pdftex log file #####################
 done
 writing xtherion file ... done
-compilation time: 10 sec
+compilation time: 19 sec
 
 
 ###################### scrap distortions #######################
  PROJECTION: plan
  AVERAGE  MAXIMAL  SCRAP
    0.00%    0.02%  WallScrap@SymbolTest
+   0.00%    0.01%  PointScrap@SymbolTest
    0.00%    0.00%  LineScrap3@SymbolTest
    0.00%    0.00%  LineScrap2@SymbolTest
    0.00%    0.00%  LineScrap1@SymbolTest
-   0.00%    0.00%  PointScrap@SymbolTest
 ################### end of scrap distortions ###################
