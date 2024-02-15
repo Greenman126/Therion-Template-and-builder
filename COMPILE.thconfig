@@ -47,22 +47,18 @@ endlayout
 
     ###           Below are the commands which export maps          ###
     ### These export to an output folder. Don't forget to make one! ###
+    ### If you use the AutoBuilder, it'll make these automatically and put them at the bottom  ###
     ###           Remove "#" before a line to activate it           ###
 
-                          # PDF Map Exports #
+                          # Map Export Templates #
 
-export map -projection plan -layout workingPlan -o "output/WORKING_Plan.pdf"
+#export map -projection plan -layout workingPlan -o "output/WORKING_Plan_Scale100.pdf"
 #export map -projection plan -layout cleanPlan -o "output/Clean_Plan.pdf"
-
 #export map -projection extended -layout workingProf -o "output/WORKING_Prof.pdf"
 #export map -projection extended -layout cleanProf   -o "output/Clean_Prof.pdf"
-
-export map -projection elevation -layout workingProf -o "output/WORKING_ProfProj.pdf"
+#export map -projection elevation -layout workingProf -o "output/WORKING_ProfProj.pdf"
 #export map -projection elevation -layout cleanProf   -o "output/Clean_ProfProj.pdf"
-
-
                             # SVG Exports #
-
 #export map -projection plan -layout workingPlan -o "output/WORKING_Plan.svg"
 #export map -projection plan -layout cleanPlan -o "output/Clean_Plan.svg"
 
@@ -71,14 +67,3 @@ export map -projection elevation -layout workingProf -o "output/WORKING_ProfProj
 
 #export map -projection elevation -layout workingProf -o "output/WORKING_ProfProj.svg"
 #export map -projection elevation -layout cleanProf   -o "output/Clean_ProfProj.svg"
-
-
-                   # Continuation/Leads List Generation #
-
-export continuation-list -o "output/leads.html" #Creates a leads list if you used the "point continuation" tool correctly
-
-
-                                 # Other #
-
-export map -format xvi -projection plan -o "output/plan.xvi"
-export map -format xvi -projection elevation -o "output/elevation.xvi"
