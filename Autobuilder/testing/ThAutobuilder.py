@@ -183,7 +183,7 @@ def createFolder(newFolderName):
         print("Error creating folder:", err)
 
 def returnExportString(projection, layout, scale, caveName, filetype):
-    return ("export map -projection " + projection + " -layout " + layout + " -layout-scale 1 " + scale + " -o \"output/" + caveName + "+WORKING_Plan_Scale" + scale + "." + filetype + "\"\n")
+    return ("export map -projection " + projection + " -layout " + layout + " -layout-scale 1 " + scale + " -o \"output/" + caveName + "_" + layout + "_Scale" + scale + "." + filetype + "\"\n")
 
 
 def add_exports_thconfig(compilerRename, caveName, scrapsList):
@@ -191,25 +191,34 @@ def add_exports_thconfig(compilerRename, caveName, scrapsList):
     extended_scraps = scrapsList[1]
     elevation_scraps = scrapsList[2]
     planLayout1 = "workingPlan"
-    scale = ["100", "200", "800"]
+    planLayout2 = "cleanPlan"
+    profLayout1 = "workingProf"
+    profLayout2 = "cleanProf"
+
+    scale = ["100", "200"]
     print("Adding exporting lines...")
 
     with open(compilerRename, 'a') as file:
-        file.write("####THAUTOBUILD EXPORT GENERATION BELOW#####")
+        file.write("\n####THAUTOBUILD EXPORT GENERATION BELOW#####")
         if plan_scraps:
             print("Adding plan exports...")
-            file.write("##Plan Maps Below##")
+            file.write("\n##Plan Maps Below##\n")
             for s in scale:
                 file.write(returnExportString("plan", planLayout1, s, caveName, "pdf"))
                 file.write(returnExportString("plan", planLayout1, s, caveName, "svg"))
 
         if extended_scraps:
             print("Adding extended exports...")
-            file.write("\nmap extendedProfMap -projection extended\n")
+            file.write("\n##Extended Maps Below##\n")
+            for s in scale:
+                file.write(returnExportString("extended", profLayout1, s, caveName, "pdf"))
+                file.write(returnExportString("extended", profLayout1, s, caveName, "svg"))
 
         if elevation_scraps:
             print("Adding elevation exports...")
-            file.write("\nmap elevationProfMap -projection elevation\n")
+            for s in scale:
+                file.write(returnExportString("elevation", profLayout1, s, caveName, "pdf"))
+                file.write(returnExportString("elevation", profLayout1, s, caveName, "svg"))
 
 def replace_keyword_in_file(filename, keyword, new_word):
   """
