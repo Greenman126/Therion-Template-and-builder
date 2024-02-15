@@ -1,6 +1,6 @@
 encoding  utf-8
-source yourCaveHere.th  #!!#EDIT THIS REFERENCE CORRECT .TH#!!#
-input "Templates_DeCelle.thconfig"
+source CAVETH_REPLACEME.th  #!!#EDIT THIS REFERENCE CORRECT .TH#!!#
+input "Symbolset_DeCelle.thconfig"
 
 layout defaults
   cs lat-long

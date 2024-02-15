@@ -76,11 +76,8 @@ endlayout
 #####################################################################################
 
 layout symbolset
-
 symbol-set NSS
-  
-#Most of this was ripped straight from Eric C. "echarlie" Landgraf
-#Eric LOVES metapost
+
 symbol-assign point debris AUT
 symbol-assign line wall:blocks AUT
 symbol-assign line wall:debris AUT
@@ -89,6 +86,17 @@ symbol-assign area sand AUT
 symbol-assign area pebbles AUT
 symbol-assign area debris AUT
 symbol-assign point pebbles AUT
+
+#MAKES WATER BLUE
+symbol-color point water-flow [0 80 80]
+symbol-color point water-drip [0 80 80]
+symbol-color line water-flow [0 80 80]
+symbol-color area water [70 100 100]
+symbol-color area sump [0 60 60]
+symbol-assign area water SKBB
+symbol-assign area sump SKBB
+  
+
 
 code metapost  
   def p_continuation(expr pos,theta,sc,al) =
@@ -436,7 +444,6 @@ def p_moonmilk (expr pos,theta,sc,al) =
     thdraw p;
     thfill p;
     thdraw p shifted (0.2u, -0.3u) scaled 0.3;
-
 enddef;
 
 
@@ -610,6 +617,63 @@ def l_slope (expr P,S)(text Q) =
   endfor;
 %pickup pencircle scaled 3pt;
 %for i=0 upto li: draw point i of P; endfor;
+enddef;
+;
+
+initsymbol("l_u_red");
+def l_u_red(expr P) =
+  T:=identity;
+  pickup PenC;
+  thdraw P withcolor (1, 0, 0);
+enddef;
+
+initsymbol("l_u_brown");
+def l_u_brown(expr P) =
+  T:=identity;
+  pickup PenC;
+  thdraw P withcolor (0.6, 0.4, 0.2);
+enddef;
+
+initsymbol("l_u_black");
+def l_u_black(expr P) =
+  T:=identity;
+  pickup PenC;
+  thdraw P withcolor (0, 0, 0);
+enddef;
+
+initsymbol("l_u_white");
+def l_u_white(expr P) =
+  T:=identity;
+  pickup PenC;
+  thdraw P withcolor (1, 1, 1);
+enddef;
+
+initsymbol("l_u_user");
+def l_u_user(expr P) =
+  T:=identity;
+  pickup PenC;
+  thdraw P withcolor (0.5, 0.5, 0.5);
+enddef;
+
+initsymbol("l_u_purple");
+def l_u_purple(expr P) =
+  T:=identity;
+  pickup PenC;
+  thdraw P withcolor (0.4, 0.0, 0.8);
+enddef;
+
+initsymbol("l_u_green");
+def l_u_green(expr P) =
+  T:=identity;
+  pickup PenC;
+  thdraw P withcolor (0.0, 1, 0);
+enddef;
+
+initsymbol("l_u_blue");
+def l_u_blue(expr P) =
+  T:=identity;
+  pickup PenC;
+  thdraw P withcolor (0, 0.8, 1);
 enddef;
 
  def s_northarrow (expr rot) =

@@ -4,9 +4,9 @@ xth_cp_data_tree_insert 27 1 1 SymbolTest SymbolTest "Symbols Cave" "Symbols Cav
 xth_cp_data_tree_create
 set xth(ctrl,cp,maplist) {}
 xth_cp_map_tree_insert projection 0 p1 {} 0 plan {} {} {}
-xth_cp_map_tree_insert map 1 575X1 p1 1 defaultPlanMap defaultPlanMap "" ""
+xth_cp_map_tree_insert map 1 586X1 p1 1 defaultPlanMap defaultPlanMap "" ""
 xth_cp_map_tree_create
 xth_cp_comp_stat 1608 5
 set xth(th_exit_state) 2
-set xth(th_exit_number) 1707848158
+set xth(th_exit_number) 1707865315
 

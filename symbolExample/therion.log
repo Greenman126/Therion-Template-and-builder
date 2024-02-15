@@ -54,7 +54,7 @@ S     0.00 PointScrap@SymbolTest ()
 ########## end of export maps & scraps selection ###############
 writing Symbols.pdf ...
 ####################### metapost log file ########################
-This is MetaPost, version 2.02 (TeX Live 2023) (kpathsea version 6.3.5)  13 FEB 2024 12:15
+This is MetaPost, version 2.02 (TeX Live 2023) (kpathsea version 6.3.5)  13 FEB 2024 17:01
 **data.mp
 (c:/texlive/2023/texmf-dist/metapost/base/mpost.mp
 (c:/texlive/2023/texmf-dist/metapost/base/plain.mp
@@ -78,21 +78,22 @@ Preloading the plain mem file, version 1.005) ) (./data.mp
 [144] [145] [146] [147] [148] [149] [150] [151] [152] [153] [154] [155] [156]
 [157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167] [168] [169]
 [170] [171] [172] [173] [174] [175] [176] [177] [178] [179] [180] [181] [182]
-[183] [184] [185] [186] [187] [188] [189] [190] [191] [192] )
+[183] [184] [185] [186] [187] [188] [189] [190] [191] [192] [193] [194] [195]
+[196] )
  
 Here is how much of MetaPost's memory you used:
- 30634 strings using 948607 characters
- 4637280 bytes of node memory
- 1911 symbolic tokens
+ 31201 strings using 967102 characters
+ 4663504 bytes of node memory
+ 1930 symbolic tokens
  11i,82n,26p,804b,5f stack positions out of 16i,98n,32p,950b,6f
-206 output files written: data-patt.1 .. data.192
+210 output files written: data-patt.1 .. data.196
 
 
 #################### end of metapost log file ####################
 converting scraps ... done
 making map ... done
 ######################## pdftex log file #########################
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdftex 2024.1.10)  13 FEB 2024 12:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdftex 2024.1.10)  13 FEB 2024 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -107,27 +108,27 @@ Normal \count register pool exhausted, switching to extended pool.)
  253 numeric registers used out of 32768
  [1] ) 
 Here is how much of TeX's memory you used:
- 483 strings out of 494595
- 5455 string characters out of 11900560
- 12165840 words of memory out of 24000000
- 2141 multiletter control sequences out of 15000+600000
+ 486 strings out of 494595
+ 5479 string characters out of 11900560
+ 12165256 words of memory out of 24000000
+ 2144 multiletter control sequences out of 15000+600000
  21229 words of font info for 66 fonts, out of 12000000 for 9000
  1416 hyphenation exceptions out of 8191
- 12i,5n,9p,515b,76s stack positions out of 10000i,1000n,20000p,12000000b,200000s
+ 12i,5n,9p,477b,76s stack positions out of 10000i,1000n,20000p,12000000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:
 /texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on data.pdf (1 page, 290569 bytes).
+Output written on data.pdf (1 page, 292725 bytes).
 PDF statistics:
- 443 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
+ 450 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 1283 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1303 words of extra memory for PDF output out of 10000 (max. 10000000)
 
 
 ##################### end of pdftex log file #####################
 done
 writing xtherion file ... done
-compilation time: 19 sec
+compilation time: 18 sec
 
 
 ###################### scrap distortions #######################

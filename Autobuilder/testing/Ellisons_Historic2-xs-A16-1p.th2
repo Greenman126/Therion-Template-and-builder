@@ -1,0 +1,315 @@
+encoding utf-8
+##XTHERION## xth_me_area_adjust 68.5 -384.2 366.1 -120.2
+##XTHERION## xth_me_area_zoom_to 25
+
+# 2023.02.21 created by TopoDroid v. 6.1.92
+
+scrap Ellisons_Historic2-xs-A16-1p -projection none -scale [0 0 39.3701 0 0 0 1 0 m]
+
+line wall
+  238.27 -228.80
+  197.48 -228.85
+  200.97 -239.19
+  194.25 -267.68
+  220.09 -278.57
+  226.16 -248.24
+endline
+
+line rock-border -close on
+  195.27 -280.69
+  195.27 -280.69
+endline
+
+line rock-border -close on
+  207.60 -280.69
+  207.60 -280.69
+endline
+
+line rock-border -close on
+  217.23 -275.50
+  217.23 -275.50
+endline
+
+line user
+  182.84 -229.97
+endline
+
+line user
+  238.82 -228.02
+endline
+
+line user
+  168.55 -222.88
+endline
+
+line user
+  216.90 -220.85
+endline
+
+line user
+  180.66 -222.00
+  220.65 -220.65
+endline
+
+line user
+  251.32 -221.23
+endline
+
+line user
+  180.49 -222.96
+endline
+
+line user
+  210.57 -220.46
+endline
+
+line user
+  224.87 -221.51
+endline
+
+line user
+  234.26 -221.90
+endline
+
+line user
+  243.01 -221.62
+endline
+
+line user
+  252.67 -221.94
+endline
+
+line user
+  189.53 -236.01
+endline
+
+line user
+  194.73 -244.67
+endline
+
+line user
+  194.59 -250.96
+endline
+
+line user
+  191.69 -256.61
+endline
+
+line user
+  192.84 -264.43
+endline
+
+line user
+  193.91 -270.44
+endline
+
+line user
+  194.45 -278.17
+endline
+
+line user
+  224.88 -276.26
+endline
+
+line user
+  218.79 -269.96
+endline
+
+line user
+  218.16 -263.69
+endline
+
+line user
+  226.77 -256.13
+endline
+
+line user
+  227.95 -247.97
+endline
+
+line user
+  232.08 -241.93
+endline
+
+line user
+  232.71 -234.41
+endline
+
+line user
+  238.24 -230.16
+endline
+
+line user
+  173.73 -231.19
+endline
+
+line user
+  187.33 -238.17
+endline
+
+line user
+  181.36 -237.87
+endline
+
+line user
+  193.06 -244.76
+endline
+
+line user
+  186.00 -245.82
+endline
+
+line user
+  185.71 -252.45
+endline
+
+line user
+  192.83 -251.78
+endline
+
+line user
+  185.12 -259.50
+endline
+
+line user
+  181.67 -266.76
+endline
+
+line user
+  192.96 -264.20
+endline
+
+line user
+  189.60 -273.82
+endline
+
+line user
+  224.49 -268.06
+endline
+
+line user
+  233.75 -269.43
+endline
+
+line user
+  204.97 -280.99
+endline
+
+line user
+  218.07 -281.60
+endline
+
+line user
+  221.46 -263.53
+endline
+
+line user
+  231.45 -262.90
+endline
+
+line user
+  227.68 -256.66
+endline
+
+line user
+  238.79 -255.33
+endline
+
+line user
+  231.05 -247.56
+endline
+
+line user
+  242.04 -246.70
+endline
+
+line user
+  235.00 -240.80
+endline
+
+line user
+  246.92 -240.38
+endline
+
+line user
+  239.47 -234.35
+endline
+
+line user
+  244.27 -233.63
+endline
+
+line user
+  241.57 -230.77
+endline
+
+line user
+  249.57 -230.15
+endline
+
+line user
+  242.51 -227.58
+endline
+
+line user
+  248.78 -228.17
+endline
+
+line user
+  236.69 -232.31
+endline
+
+line user
+  233.88 -240.74
+endline
+
+line user
+  232.46 -245.19
+endline
+
+line user
+  181.01 -242.76
+endline
+
+line user
+  177.95 -250.13
+endline
+
+line user
+  179.58 -257.74
+endline
+
+line user
+  181.88 -262.50
+endline
+
+line user
+  181.95 -269.36
+endline
+
+line user
+  222.34 -266.65
+endline
+
+line user
+  229.23 -257.05
+endline
+
+line user
+  234.64 -250.92
+endline
+
+line border -id xs-A16-1p-a3 -close on
+  189.94 -276.95
+  223.31 -281.75
+  189.94 -276.95
+endline
+area water
+  xs-A16-1p-a3
+endarea
+
+
+
+
+endscrap
+
