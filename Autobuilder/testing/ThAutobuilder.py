@@ -60,7 +60,7 @@ def find_scraps():
     elevation_scraps = []
     for filename in os.listdir(directory):
         if filename.endswith(".th2"):
-            print("scrap search" + filename)
+            print("Searching for scraps in: " + filename)
             with open(filename, 'r') as file:
                 for line in file:
                     line = line.strip()
@@ -182,22 +182,33 @@ def createFolder(newFolderName):
     except OSError as err:
         print("Error creating folder:", err)
 
+def returnExportString(projection, layout, scale, caveName, filetype):
+    return ("export map -projection " + projection + " -layout " + layout + " -layout-scale 1 " + scale + " -o \"output/" + caveName + "+WORKING_Plan_Scale" + scale + "." + filetype + "\"\n")
+
+
 def add_exports_thconfig(compilerRename, caveName, scrapsList):
     plan_scraps = scrapsList[0]
     extended_scraps = scrapsList[1]
     elevation_scraps = scrapsList[2]
-    planLayoutName = ""
-    scale = ["100", "200"]
+    planLayout1 = "workingPlan"
+    scale = ["100", "200", "800"]
+    print("Adding exporting lines...")
 
     with open(compilerRename, 'a') as file:
+        file.write("####THAUTOBUILD EXPORT GENERATION BELOW#####")
         if plan_scraps:
+            print("Adding plan exports...")
+            file.write("##Plan Maps Below##")
             for s in scale:
-                file.write("\nexport map -projection plan -layout workingPlan -layout-scale 1 " + s + " -o \"output/WORKING_Plan_Scale" + s + ".pdf\"\n")
+                file.write(returnExportString("plan", planLayout1, s, caveName, "pdf"))
+                file.write(returnExportString("plan", planLayout1, s, caveName, "svg"))
 
         if extended_scraps:
+            print("Adding extended exports...")
             file.write("\nmap extendedProfMap -projection extended\n")
 
         if elevation_scraps:
+            print("Adding elevation exports...")
             file.write("\nmap elevationProfMap -projection elevation\n")
 
 def replace_keyword_in_file(filename, keyword, new_word):
@@ -251,9 +262,11 @@ download_from_github_permalink(symbolsetLink, symbolsetRename)
 download_from_github_permalink(compilerLink, compilerRename)
 
 scrapsList = find_scraps()
-write_th(input_th, new_th_filename, caveName, scrapsList)  
+write_th(input_th, new_th_filename, caveName, scrapsList)
 
 #Modify the thconfig file
+print("Modifying thconfig")
+
 add_exports_thconfig(compilerRename, caveName, scrapsList) #Writes export lines to the COMPILE.thconfig file if that type of scrap was exported
 th_replacement_keyword = "CAVETH_REPLACEME.th" #references the keyword in the COMPILE file to be replaced
 replace_keyword_in_file(compilerRename, th_replacement_keyword, new_th_filename)
