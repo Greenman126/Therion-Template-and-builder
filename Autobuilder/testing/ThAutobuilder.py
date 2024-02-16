@@ -1,5 +1,6 @@
 import os
 import requests
+import subprocess
 
 def th_finder():
     directory = os.path.dirname(os.path.abspath(__file__))
@@ -246,6 +247,32 @@ def replace_keyword_in_file(filename, keyword, new_word):
 
   print(f"Keyword '{keyword}' replaced with '{new_word}' in {filename}")
 
+def compile_thconfig(thconfig_filename):
+    """Compiles a .thconfig file using Therion.
+
+    Args:
+        thconfig_file_path: The path to the .thconfig file to compile.
+
+    Raises:
+        FileNotFoundError: If the .thconfig file is not found.
+        subprocess.CalledProcessError: If Therion fails to compile the file.
+    """
+    thconfig_file_path = os.getcwd() + "\\" + thconfig_filename
+    if not os.path.isfile(thconfig_file_path):
+        raise FileNotFoundError(f"The .thconfig file '{thconfig_file_path}' was not found.")
+
+    # Construct the Therion command based on your installation path:
+    therion_command = "C:/Program Files/Therion/therion.exe"  # Replace with your Therion path
+    command = f"{therion_command} {thconfig_file_path}"
+
+    try:
+        subprocess.run(command, check=True)  # Use check=True to raise an error if Therion fails
+        print(f"The .thconfig file '{thconfig_file_path}' has been compiled successfully.")
+    except subprocess.CalledProcessError as error:
+        print(f"Error compiling .thconfig file: {error}")
+
+
+
 
 
 
@@ -283,3 +310,5 @@ replace_keyword_in_file(compilerRename, th_replacement_keyword, new_th_filename)
 createFolder("output") #creates output folder for when you export compile the sketches
 
 wait = input("Press Enter To Close")
+
+compile_thconfig(compilerRename)
