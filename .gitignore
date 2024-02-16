@@ -2,3 +2,6 @@
 *.pdf
 *.xvi
 .xtherion.dat
+Autobuilder/testing/COMPILE_sdfg.thconfig
+Autobuilder/testing/sdfg_Auto.th
+Autobuilder/testing/Symbolset_DeCelle.thconfig
