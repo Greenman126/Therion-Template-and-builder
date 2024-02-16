@@ -1,0 +1,83 @@
+therion 6.2.0 (2023-12-21)
+  - using Proj 9.3.0, compiled against 9.3.0
+initialization file: C:\Program Files\Therion/therion.ini
+reading ... done
+configuration file: C:\Users\Christian\Documents\GitHub\Christians-Therion-Template\Autobuilder\testing\COMPILE_test.thconfig
+reading ... done
+reading source files ... done
+preprocessing database ... done
+scanning centreline tree ... done
+searching for centerline loops ... done
+calculating station coordinates ... done
+average loop error: 12.62%
+processing survey data ... 
+####################### cavern log file ########################
+ 1> Survex 1.4.5
+ 2> Copyright (C) 1990-2021 Olly Betts
+ 3> Survey has no control points. Therefore I've fixed 1 at (0,0,0)
+ 4> 
+ 5> Survey contains 693 survey stations, joined by 693 shots.
+ 6> There are 2 loops.
+ 7> Survey has 2 connected components.
+ 8> Total length of survey shots =  229.71m ( 229.27m adjusted)
+ 9> Total plan length of survey shots =  225.82m
+10> Total vertical length of survey shots =   33.83m
+11> Vertical range = 25.09m (from 163 at 3.02m to 49 at -22.07m)
+12> North-South range = 126.23m (from 28 at 6.03m to 688 at -120.20m)
+13> East-West range = 105.62m (from 688 at 93.21m to 163 at -12.41m)
+14>  679 1-nodes.
+15>    1 17-node.
+16>    1 23-node.
+17>    1 25-node.
+18>    1 27-node.
+19>    1 32-node.
+20>    1 34-node.
+21>    1 40-node.
+22>    1 42-node.
+23>    1 49-node.
+24>    1 58-node.
+25>    1 61-node.
+26>    1 65-node.
+27>    1 106-node.
+28>    1 128-node.
+29> 
+######################### transcription ########################
+ 3> 1 : R0@test
+ 5> 693 : .@test -- 693 : .@test
+ 6> 2 : .@test
+ 7> 2 : .@test
+11> 163 : .@test -- 49 : .@test
+12> 28 : .@test -- 688 : .@test
+13> 688 : .@test -- 163 : .@test
+14> 679 : .@test
+15> 1 : R0@test
+16> 1 : R0@test
+17> 1 : R0@test
+18> 1 : R0@test
+19> 1 : R0@test
+20> 1 : R0@test
+21> 1 : R0@test
+22> 1 : R0@test
+23> 1 : R0@test
+24> 1 : R0@test
+25> 1 : R0@test
+26> 1 : R0@test
+27> 1 : R0@test
+28> 1 : R0@test
+#################### end of cavern log file ####################
+done
+calculating basic statistics ... done
+processing extended elevation ... done
+processing references ... done
+selecting export objects ... done
+processing projection plan ... done
+average distortion: 0.66%
+
+
+############### export maps & scraps selection #################
+M    -4.11 planMap@test ()
+S    -1.18 Ellisons_Historic-1p@test ()
+S    -7.03 Ellisons_Historic-inCavep@test ()
+########## end of export maps & scraps selection ###############
+writing output/test_workingPlan_Scale100.pdf ...
+processing projection none ... done

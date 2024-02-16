@@ -1,6 +1,7 @@
 import os
 import requests
 import subprocess
+import keyboard
 
 def th_finder():
     directory = os.path.dirname(os.path.abspath(__file__))
@@ -271,6 +272,9 @@ def compile_thconfig(thconfig_filename):
     except subprocess.CalledProcessError as error:
         print(f"Error compiling .thconfig file: {error}")
 
+def handle_input():
+  key = keyboard.read_key()
+  return key
 
 
 
@@ -309,6 +313,14 @@ replace_keyword_in_file(compilerRename, th_replacement_keyword, new_th_filename)
 
 createFolder("output") #creates output folder for when you export compile the sketches
 
-wait = input("Press Enter To Close")
+print("\nPress x to attempt to run therion and compile maps, or anything else to exit")
+key = handle_input()
 
-compile_thconfig(compilerRename)
+if key == 'x' or key == 'X':
+    compile_thconfig(compilerRename)
+else:
+    print("Ending program")
+    quit()
+
+
+wait = input("Press Enter To Close")
