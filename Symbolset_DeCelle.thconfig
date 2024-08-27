@@ -206,6 +206,8 @@ def p_gradient (expr pos,theta,sc,al) =
   thdraw (.2u, -.4u) -- (.4u, .2u);
 enddef;
 
+p_label_mode_height:=6;
+
 def p_narrowend (expr pos,theta,sc,al)=
 	p_label ("TT", pos, theta, 0);
 enddef;
