@@ -108,12 +108,12 @@ code metapost
 
 def a_water (expr Path) =
   T:=identity;
-  thfill Path withtransparentcolor (0, 0.8, 0.8)
+  thfill Path withtransparentcolor (0.7, 0.8, 1)
 enddef;
 
 def a_sump (expr Path) =
   T:=identity;
-  thfill Path withtransparentcolor (0, 0.6, 0.6)
+  thfill Path withtransparentcolor (0.6, 0.6, 1)
 enddef;
 
 def a_debris (expr p) =
