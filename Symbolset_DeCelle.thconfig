@@ -78,6 +78,8 @@ endlayout
 layout symbolset
 symbol-set NSS
 
+symbol-hide line border
+
 symbol-assign point debris AUT
 symbol-assign line wall:blocks AUT
 symbol-assign line wall:debris AUT
