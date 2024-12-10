@@ -101,14 +101,20 @@ symbol-color point sand [30 30 30]
 symbol-color point water-flow [0 80 80]
 symbol-color point water-drip [0 80 80]
 symbol-color line water-flow [0 80 80]
-symbol-color area water [70 100 100]
-symbol-color area sump [0 60 60]
-symbol-assign area water SKBB
-symbol-assign area sump SKBB
   
 
 
 code metapost  
+
+def a_water (expr Path) =
+  T:=identity;
+  thfill Path withtransparentcolor (0.7, 1, 1)
+enddef;
+
+def a_sump (expr Path) =
+  T:=identity;
+  thfill Path withtransparentcolor (0, 60, 60)
+enddef;
 
 def a_debris (expr p) =
   T:=identity;
