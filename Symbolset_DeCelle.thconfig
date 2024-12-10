@@ -89,6 +89,11 @@ symbol-assign point pebbles AUT
 #Floor detail gray
 
 symbol-color area debris [30 30 30]
+symbol-color area clay [30 30 30]
+symbol-color area sand [30 30 30]
+symbol-color point debris [30 30 30]
+symbol-color point clay [30 30 30]
+symbol-color point sand [30 30 30]
 
 #MAKES WATER BLUE
 symbol-color point water-flow [0 80 80]
