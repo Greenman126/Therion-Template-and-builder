@@ -84,8 +84,11 @@ symbol-assign line wall:debris AUT
 symbol-assign line ceiling-meander UIS
 symbol-assign area sand AUT
 symbol-assign area pebbles AUT
-symbol-assign area debris AUT
 symbol-assign point pebbles AUT
+
+#Floor detail gray
+
+symbol-color area debris [30 30 30]
 
 #MAKES WATER BLUE
 symbol-color point water-flow [0 80 80]
@@ -99,6 +102,32 @@ symbol-assign area sump SKBB
 
 
 code metapost  
+
+def a_debris (expr p) =
+  T:=identity;
+  pickup PenC;
+  path q, qq; q = bbox p;
+  picture tmp_pic;
+  uu := max(u, (xpart urcorner q - xpart llcorner q)/100, (ypart urcorner q - ypart llcorner q)/100);
+  tmp_pic := image(
+    for i = xpart llcorner q step 0.5uu until xpart urcorner q:
+      for j = ypart llcorner q step 0.5uu until ypart urcorner q:
+        qq := punked (((-.1uu,-.1uu)--(.1uu,-.1uu)--(.1uu,.1uu)--(-.1uu,.1uu)--cycle)
+	     randomized (uu/5))
+             rotated uniformdeviate(360)
+             shifted ((i,j) randomized 1.6uu);
+	if xpart (p intersectiontimes qq) < 0:
+	  thclean qq;
+	  thdraw qq;
+	fi;
+      endfor;
+    endfor;
+  );
+  clip tmp_pic to p;
+  drawoptions();
+  draw tmp_pic;
+enddef;
+  
   def p_continuation(expr pos,theta,sc,al) =
     %Michael Ketzner contribution
     % draw default continuation symbol
@@ -768,3 +797,4 @@ text en "point vegetable-debris" "vegetative debris"
 text en "line ceiling-step" "ceiling height change"
 text en "point anchor" "bolted anchor"
 text en "point u:fault" "vertical fault"
+text en "area debris" "debris"
