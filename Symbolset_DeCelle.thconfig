@@ -97,6 +97,9 @@ symbol-color point debris [30 30 30]
 symbol-color point clay [30 30 30]
 symbol-color point sand [30 30 30]
 
+#Make Remarks Red
+symbol-color point remark [100 0 0]
+
 #MAKES WATER BLUE
 symbol-color point water-flow [0 30 100]
 symbol-color point water-drip [0 30 100]
