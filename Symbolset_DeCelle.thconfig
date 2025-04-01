@@ -78,71 +78,27 @@ endlayout
 layout symbolset
 symbol-set NSS
 
-symbol-hide line border
-
 symbol-assign point debris AUT
 symbol-assign line wall:blocks AUT
 symbol-assign line wall:debris AUT
 symbol-assign line ceiling-meander UIS
 symbol-assign area sand AUT
 symbol-assign area pebbles AUT
+symbol-assign area debris AUT
 symbol-assign point pebbles AUT
 
-#Floor detail gray
-
-symbol-color area debris [30 30 30]
-symbol-color area clay [30 30 30]
-symbol-color area sand [30 30 30]
-symbol-color point debris [30 30 30]
-symbol-color point clay [30 30 30]
-symbol-color point sand [30 30 30]
-
-#Make Remarks Red
-symbol-color point remark [100 0 0]
-
 #MAKES WATER BLUE
-symbol-color point water-flow [0 30 100]
-symbol-color point water-drip [0 30 100]
-symbol-color line water-flow [0 30 100]
+symbol-color point water-flow [0 80 80]
+symbol-color point water-drip [0 80 80]
+symbol-color line water-flow [0 80 80]
+symbol-color area water [70 100 100]
+symbol-color area sump [0 60 60]
+symbol-assign area water SKBB
+symbol-assign area sump SKBB
+  
 
 
 code metapost  
-
-def a_water (expr Path) =
-  T:=identity;
-  thfill Path withtransparentcolor (0.7, 0.8, 1)
-enddef;
-
-def a_sump (expr Path) =
-  T:=identity;
-  thfill Path withtransparentcolor (0.6, 0.6, 1)
-enddef;
-
-def a_debris (expr p) =
-  T:=identity;
-  pickup PenC;
-  path q, qq; q = bbox p;
-  picture tmp_pic;
-  uu := max(u, (xpart urcorner q - xpart llcorner q)/100, (ypart urcorner q - ypart llcorner q)/100);
-  tmp_pic := image(
-    for i = xpart llcorner q step 0.5uu until xpart urcorner q:
-      for j = ypart llcorner q step 0.5uu until ypart urcorner q:
-        qq := punked (((-.1uu,-.1uu)--(.1uu,-.1uu)--(.1uu,.1uu)--(-.1uu,.1uu)--cycle)
-	     randomized (uu/5))
-             rotated uniformdeviate(360)
-             shifted ((i,j) randomized 1.6uu);
-	if xpart (p intersectiontimes qq) < 0:
-	  thclean qq;
-	  thdraw qq;
-	fi;
-      endfor;
-    endfor;
-  );
-  clip tmp_pic to p;
-  drawoptions();
-  draw tmp_pic;
-enddef;
-  
   def p_continuation(expr pos,theta,sc,al) =
     %Michael Ketzner contribution
     % draw default continuation symbol
@@ -812,4 +768,3 @@ text en "point vegetable-debris" "vegetative debris"
 text en "line ceiling-step" "ceiling height change"
 text en "point anchor" "bolted anchor"
 text en "point u:fault" "vertical fault"
-text en "area debris" "debris"
